@@ -15,4 +15,5 @@ export const LAYOUT_IMG = {
   discord: require("assets/discord.png"),
   teamspeak: require("assets/teamspeak.png"),
   privacyBanner: require("assets/privacy_policy.png"),
+  termsBanner: require("assets/terms_services.png"),
 };
