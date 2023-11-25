@@ -1,0 +1,218 @@
+/* banner */
+.banner_layout {
+  position: relative;
+  height: 90vh;
+}
+
+.banner_layout img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.banner_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0 20px;
+}
+
+.banner_content h1 {
+  color: #fff;
+  font-size: 56px;
+  font-weight: 700;
+  letter-spacing: 5.6px;
+  text-align: center;
+  max-width: 900px;
+}
+
+.banner_btn {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  border: 1px solid #0788ff;
+  border-radius: 11px;
+  text-transform: uppercase;
+  padding: 13px 30px;
+  margin-top: 20px;
+  transition: 0.5s ease-in-out;
+}
+.banner_btn:hover {
+  background-color: #0788ff;
+}
+
+.banner_swiper .swiper-pagination-bullet {
+  background-color: #fff !important;
+  opacity: 100%;
+}
+
+.banner_swiper .swiper-pagination-bullet-active {
+  background-color: #fdc535 !important;
+}
+
+/* banner */
+
+/* services */
+
+.services_abt_bg {
+  background-color: #171619;
+  background-image: url("assets/about_bg.png");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 70px 0;
+}
+
+.service_card {
+  margin-top: 50px;
+}
+
+.service-card-body {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 28px;
+  padding: 50px;
+  width: 100%;
+  min-height: 300px;
+  max-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 15px;
+  transition: 0.5s ease-in-out;
+  border: 2px solid rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+
+.service-card-body p {
+  color: #fff;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  max-width: 250px;
+}
+
+.service-card-body:hover {
+  background-color: #000;
+  border: 2px solid #0788ff;
+}
+
+.service-card-body:hover img {
+  filter: brightness(0) saturate(100%) invert(36%) sepia(87%) saturate(1710%)
+    hue-rotate(192deg) brightness(99%) contrast(107%);
+}
+
+.serrvices .swiper-pagination {
+  position: relative;
+  margin-top: 40px;
+}
+
+.serrvices .swiper-pagination-bullet {
+  height: 20px;
+  width: 20px;
+  background: #d9d9d9;
+}
+
+.serrvices .swiper-pagination-bullet-active {
+  background-color: #0788ff;
+}
+
+/* services */
+
+/* about us */
+.about_us {
+  background-color: #d9d9d90d;
+  position: relative;
+}
+
+.about_us_content {
+  padding: 50px 0;
+}
+
+.about_us_content p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 36px;
+  margin-top: 20px;
+}
+
+.about_us_content button {
+  background-color: #fdc535;
+  color: #000;
+  text-transform: uppercase;
+  border: 0;
+  font-weight: 600;
+  font-size: 17px;
+  padding: 10px 20px;
+  margin-top: 15px;
+  border-radius: 10px;
+  transition: 0.5s ease-in-out;
+}
+.about_us_content button:hover {
+  background-color: #0788ff;
+  color: #fff;
+}
+.abt_img {
+  margin-left: 30px;
+}
+
+@media only screen and (max-width: 1600px) {
+  .banner_layout {
+    height: 80vh;
+  }
+  .banner_content h1 {
+    font-size: 45px;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .banner_layout {
+    height: 68vh;
+  }
+  .banner_content h1 {
+    font-size: 40px;
+  }
+  .banner_btn {
+    font-size: 16px;
+    padding: 11px 30px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .banner_content h1 {
+    max-width: 600px;
+    font-size: 32px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .banner_content h1 {
+    font-size: 28px;
+  }
+  .banner_btn {
+    margin-top: 10px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .banner_content h1 {
+    font-size: 24px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .banner_layout {
+    height: 60vh;
+  }
+  .banner_content h1 {
+    font-size: 20px;
+  }
+  .banner_btn {
+    font-size: 14px;
+  }
+}

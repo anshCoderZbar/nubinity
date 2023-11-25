@@ -1,0 +1,116 @@
+@font-face {
+  font-family: "ITC Avant Garde Gothic";
+  src: url("fonts/Avant-Garde-Bold.ttf") format("ttf");
+  font-weight: bold;
+  font-style: bold;
+  src: local(""), url("fonts/Avant-Garde-Bold.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: "ITC Avant Garde Gothic";
+  src: url("fonts/avant_garde_medium.ttf") format("ttf");
+  font-weight: medium;
+  font-style: medium;
+  src: local(""), url("fonts/avant_garde_medium.ttf") format("opentype");
+}
+@font-face {
+  font-family: "ITC Avant Garde Gothic";
+  src: url("fonts/AvantGarde-Normal.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+  src: local(""), url("fonts/AvantGarde-Normal.ttf") format("opentype");
+}
+
+html,
+body {
+  overflow-x: hidden;
+  scroll-padding-top: 100px;
+  font-family: "ITC Avant Garde Gothic";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "ITC Avant Garde Gothic";
+}
+
+p {
+  font-family: "ITC Avant Garde Gothic";
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  font-family: "ITC Avant Garde Gothic";
+}
+a {
+  font-family: "ITC Avant Garde Gothic";
+  text-decoration: none;
+}
+button {
+  font-family: "ITC Avant Garde Gothic";
+}
+input:focus {
+  outline: none;
+}
+.container-fluid {
+  padding-left: 100px !important;
+  padding-right: 100px !important;
+}
+
+.main_head_1 {
+  color: #fff;
+  font-size: 45px;
+  font-weight: 700;
+}
+@media only screen and (max-width: 1600px) {
+  .main_head_1 {
+    font-size: 35px;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .container-fluid {
+    padding-left: 80px !important;
+    padding-right: 80px !important;
+  }
+  .main_head_1 {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .container-fluid {
+    padding-left: 65px !important;
+    padding-right: 65px !important;
+  }
+
+  .main_head_1 {
+    font-size: 26px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .container-fluid {
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+  }
+  .main_head_1 {
+    font-size: 23px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .container-fluid {
+    padding-left: 35px !important;
+    padding-right: 35px !important;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .container-fluid {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+}
