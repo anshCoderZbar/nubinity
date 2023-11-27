@@ -99,12 +99,12 @@ export const FooterLayout = [
       {
         id: 16,
         link: "Terms of service",
-        slug: "/",
+        slug: "/terms-services",
       },
       {
         id: 17,
         link: "Privacy Policy",
-        slug: "/",
+        slug: "/privacy-policy",
       },
       {
         id: 18,

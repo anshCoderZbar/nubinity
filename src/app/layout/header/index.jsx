@@ -19,7 +19,7 @@ export const Header = () => {
   }, []);
 
   return (
-    <header className={`header ${scrollY >= 50 ? "blur-class" : ""}`}>
+    <header className={`header ${scrollY >= 50 ? "" : ""}`}>
       <div className="container-fluid">
         <div className="navigation_bar">
           <Link to="/">

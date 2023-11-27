@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Zetta&family=PT+Sans:wght@400;700&display=swap");
+
 @font-face {
   font-family: "ITC Avant Garde Gothic";
   src: url("fonts/Avant-Garde-Bold.ttf") format("ttf");
@@ -67,6 +69,39 @@ input:focus {
   font-size: 45px;
   font-weight: 700;
 }
+
+.content_main {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 36px;
+  margin-top: 20px;
+  max-width: 700px;
+}
+
+.btn_bg {
+  background-color: #fdc535;
+  color: #000;
+  border: 0;
+  font-weight: 600;
+  font-size: 17px;
+  padding: 15px 30px;
+  border-radius: 10px;
+  transition: 0.5s ease-in-out;
+}
+.btn_bg:hover {
+  background-color: #0788ff;
+  color: #fff;
+}
+
+.pad_lf_0 {
+  padding-left: 0px !important;
+}
+
+.pad_ri_0 {
+  padding-right: 0 !important;
+}
+
 @media only screen and (max-width: 1600px) {
   .main_head_1 {
     font-size: 35px;

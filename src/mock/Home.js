@@ -97,3 +97,129 @@ export const ServicesData = [
     heading2: "Datacenter Services",
   },
 ];
+
+export const PlansData = [
+  {
+    id: 1,
+    discount: "10%",
+    heading: "Managed Endpoint Protection",
+    price: "16.99",
+    timePeridd: "Per Month",
+    details: [
+      {
+        desc: "Managed Endpoint Protection",
+      },
+      {
+        desc: "16.99 USD / month per endpoint",
+      },
+      {
+        desc: "On-prem appliance available",
+      },
+      {
+        desc: "Advanced threat analytics",
+      },
+      {
+        desc: "Threat Intelligence",
+      },
+      {
+        desc: "Compliance Automation",
+      },
+      {
+        desc: "Single pane of glass monitoring",
+      },
+      {
+        desc: "Managed connectivity and appliances",
+      },
+    ],
+  },
+  {
+    id: 2,
+    discount: "20%",
+    heading: "cPanel Hosting",
+    price: "9.99",
+    timePeridd: "Per Month",
+    details: [
+      {
+        desc: "cPanel Hosting",
+      },
+      {
+        desc: "cPanel Hosting",
+      },
+      {
+        desc: "cPanel Hosting",
+      },
+      {
+        desc: "cPanel Hosting",
+      },
+      {
+        desc: "cPanel Hosting",
+      },
+    ],
+  },
+  {
+    id: 3,
+    discount: "25%",
+    heading: "Professional Services",
+    price: "98",
+    timePeridd: "Per Hour",
+    details: [
+      {
+        desc: "Professional Services",
+      },
+      {
+        desc: "Starting at 98 USD / hr",
+      },
+      {
+        desc: "Discounted rates for managed services",
+      },
+      {
+        desc: "Multi-Discipline Experts ",
+      },
+      {
+        desc: "Security Consulting and Pentesting",
+      },
+      {
+        desc: "Devops and General IT Consulting",
+      },
+      {
+        desc: "Over 20 years of experience ",
+      },
+      {
+        desc: "Intelligent Collaboration Services",
+      },
+    ],
+  },
+];
+
+export const TeamData = [
+  {
+    id: 1,
+    img: require("assets/team1.png"),
+    name: "Pavel Glukhikh",
+    designation: "Chief Executive Officer / Founder",
+  },
+  {
+    id: 2,
+    img: require("assets/team2.png"),
+    name: "Pavel Glukhikh",
+    designation: "Chief Executive Officer / Founder",
+  },
+  {
+    id: 3,
+    img: require("assets/team3.png"),
+    name: "Pavel Glukhikh",
+    designation: "Chief Executive Officer / Founder",
+  },
+  {
+    id: 4,
+    img: require("assets/team4.png"),
+    name: "Pavel Glukhikh",
+    designation: "Chief Executive Officer / Founder",
+  },
+  {
+    id: 5,
+    img: require("assets/team5.png"),
+    name: "Pavel Glukhikh",
+    designation: "Chief Executive Officer / Founder",
+  },
+];

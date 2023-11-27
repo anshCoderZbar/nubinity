@@ -68,7 +68,6 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 70px 0;
 }
 
 .service_card {
@@ -114,6 +113,7 @@
 .serrvices .swiper-pagination {
   position: relative;
   margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .serrvices .swiper-pagination-bullet {
@@ -138,34 +138,307 @@
   padding: 50px 0;
 }
 
-.about_us_content p {
-  color: #fff;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 36px;
-  margin-top: 20px;
+.about_us_content button {
+  text-transform: uppercase;
+  margin-top: 15px;
 }
 
-.about_us_content button {
-  background-color: #fdc535;
-  color: #000;
-  text-transform: uppercase;
-  border: 0;
-  font-weight: 600;
-  font-size: 17px;
-  padding: 10px 20px;
+/* plans */
+.plans {
+  background-color: #171619;
+  background-image: url("assets/plans_layers.png");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  padding: 70px 0;
+}
+
+.plans_content span {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 5px;
+  font-family: "ITC Avant Garde Gothic";
+}
+
+.plans_content h2 {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 69px;
+}
+.plans_content p {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.plans_content button {
   margin-top: 15px;
-  border-radius: 10px;
+}
+
+.price_card_bg {
+  background-color: #00000080;
+  padding: 30px 35px;
+  width: auto;
+  height: 100%;
+  border-radius: 17px;
   transition: 0.5s ease-in-out;
 }
-.about_us_content button:hover {
-  background-color: #0788ff;
+
+.price-discounted {
   color: #fff;
-}
-.abt_img {
-  margin-left: 30px;
+  font-family: "ITC Avant Garde Gothic";
+  font-size: 17px;
 }
 
+.price_card_bg h3 {
+  color: #fff;
+  font-size: 24px;
+}
+.price {
+  color: #fff;
+  font-size: 50px;
+  font-weight: 700;
+}
+.price span {
+  font-size: 16px;
+}
+
+.price_card_bg hr {
+  border-top: 1px solid #fff;
+  opacity: 100;
+  margin: 1.5rem 0;
+}
+
+.plans_desc {
+  list-style: none;
+}
+.plans_desc li {
+  color: #fff;
+  margin-top: 25px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.plans_desc li svg {
+  height: 20px;
+  width: 20px;
+  background-color: #fdc535;
+  color: #000;
+  border-radius: 10px;
+  padding: 3px;
+  margin-right: 14px;
+  transition: 0.5s ease-in-out;
+}
+
+.checkout-btn {
+  background-color: transparent;
+  color: #fff;
+  padding: 10px 35px;
+  border: 1px solid #fff;
+  margin-top: 30px;
+  border-radius: 27px;
+  font-size: 17px;
+  text-transform: uppercase;
+  transition: 0.5s ease-in-out;
+}
+
+.price_card_bg:hover {
+  background-color: #000;
+}
+
+.price_card_bg:hover svg {
+  background-color: #0788ff;
+}
+.price_card_bg:hover .checkout-btn {
+  background-color: #0788ff;
+  border: 1px solid #0788ff;
+}
+
+/* plans */
+
+/* vision */
+.vision {
+  background-color: #171820;
+}
+.vision_content {
+  margin-left: 50px;
+}
+
+.vision_content button {
+  margin-top: 15px;
+  text-transform: uppercase;
+}
+
+.btm_content {
+  padding: 80px 0 50px;
+  max-width: 970px;
+  margin: 0 auto;
+}
+.btm_content .lower_quote svg,
+.btm_content .upper_quote svg {
+  fill: #fdc535;
+  color: #fdc535;
+  margin: 0 5px;
+}
+.btm_content .lower_quote svg {
+  transform: rotateZ(180deg);
+}
+.btm_content p {
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+}
+
+.ceo_name {
+  font-family: "Lexend Zetta", sans-serif;
+  color: #fff;
+  text-align: center;
+  display: block;
+  font-size: 18px;
+  margin-top: 15px;
+  letter-spacing: 1px;
+}
+
+.designaton {
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  display: block;
+  margin-top: 10px;
+}
+
+/* vision */
+
+/* team */
+.our_team {
+  background-color: #151723;
+  background-image: url("assets/Privacy_Policy_Bg.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  padding: 70px 0;
+}
+.team_card {
+  display: grid;
+  /* justify-content: center;
+  align-items: center; */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 80px;
+}
+.teams h2 {
+  margin-bottom: 55px;
+}
+
+.card_outer {
+  background-color: #000;
+  width: 100%;
+  position: relative;
+  padding: 20px 15px 25px 15px;
+  border-radius: 12px;
+  transition: 0.5s ease-in-out;
+}
+
+.card_outer:hover {
+  background-color: #0788ff;
+}
+
+.member_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -45px;
+}
+.member_img img {
+  border-radius: 12px;
+}
+
+.card_icons,
+.member_name,
+.member_designation {
+  margin-top: 10px;
+}
+.progress-container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  padding: 55px 55px;
+  height: 400px;
+  margin-bottom: 70px;
+  margin-top: 50px;
+  border-radius: 30px;
+  position: relative;
+}
+
+.progress-step {
+  width: 25%;
+  height: 10px;
+}
+
+.dot {
+  width: 50px;
+  height: 50px;
+  background: #fcd535;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dot_inner {
+  height: 25px;
+  width: 25px;
+  background-color: #fff;
+  opacity: 0.5;
+  border-radius: 15px;
+}
+
+.dot_before,
+.dot_after {
+  position: absolute;
+  text-align: center;
+  z-index: 1;
+}
+
+.dot_before {
+  top: 30%;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+  transform: translateY(-50%);
+}
+.dot_after {
+  bottom: 30%;
+  color: #fff;
+  max-width: 268px;
+  font-size: 18px;
+  transform: translateY(50%);
+}
+
+.dot_v4 {
+  background-color: #137dbb;
+}
+
+.s_1 {
+  background-color: #fcd535;
+}
+.s_2 {
+  background: linear-gradient(90deg, #fcd535 0%, #a7b566 35%);
+}
+.s_3 {
+  background: linear-gradient(90deg, #fcd535 0%, #a7b566 0%, #529ccc 35%);
+}
+.progress_content {
+  color: #fff;
+}
 @media only screen and (max-width: 1600px) {
   .banner_layout {
     height: 80vh;
