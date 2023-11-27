@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 import { PlansData, TeamData } from "mock/Home";
 import { ContactForm } from "components/contact-form";
+import { BottomBanner } from "components/ui/BottomBanner";
 
 export default function Home() {
   return (
@@ -253,6 +254,7 @@ export default function Home() {
           </div>
           <ContactForm />
         </div>
+        <BottomBanner />
       </div>
     </div>
   );
