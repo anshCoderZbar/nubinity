@@ -329,6 +329,7 @@
   align-items: center; */
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 80px;
+  margin-bottom: 55px;
 }
 .teams h2 {
   margin-bottom: 55px;
