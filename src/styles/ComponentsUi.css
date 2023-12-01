@@ -53,6 +53,8 @@
   font-size: 30px;
   line-height: 60px;
   font-family: 600;
+  max-width: 1200px;
+  margin: 0 auto 1.5rem;
 }
 .bottom_banner a {
   display: flex;
@@ -73,6 +75,77 @@
   color: #fff;
 }
 
+
+/* modal css  */
+.servc_modal::before {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.9;
+}
+.servc_modal .modal-dialog {
+  max-width: 100%;
+}
+.servc_modal .modal-content {
+
+  background: #171618;
+  border-radius: 0;
+}
+span.Close_modal {
+  position: absolute;
+  top: -40px;
+  right: 20px;
+  background: #fff;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.servc_modal  .modal-body {
+  flex-wrap: wrap;
+  padding: 2rem 4rem;
+  align-items: center;
+}
+.modal_text {
+  flex: 1;
+  padding-right: 2rem;
+}
+.modal_img {
+  flex: 1;
+  padding-left: 2rem;
+}
+.modal_text h1{
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.3em;
+}
+.modal_text ul{
+  padding-left: 18px;
+  padding-top: 1.1rem;
+  padding-bottom: 1.6rem;}
+.modal_text li{
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 1.3em;
+  color: #fff;
+}
+.modal_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.modal_text button{margin-left: 18px;}
+
+/* end  */
 /* responsive */
 @media only screen and (max-width: 1600px) {
   .page_banner_layout {
@@ -85,9 +158,31 @@
     height: 400px;
   }
   .bottom_banner p {
-    font-size: 27px;
-    line-height: 50px;
-  }
+    font-size: 22px;
+    line-height: 38px;
+    max-width: 890px;
+}
+.bottom_banner a {
+  padding: 10px 22px;
+  font-size: 14px;
+}
+.contact_deta::before {
+  height: 45%;
+}
+.team_card {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 50px;
+}
+.contact_page .page_banner_layout {
+  height: 65vh;
+}
+.modal_text h1 {
+  font-size: 25px;
+}
+.modal_text li {
+  font-size: 15px;
+}
+
 }
 @media only screen and (max-width: 1400px) {
   .page_banner_layout {
@@ -103,6 +198,10 @@
     font-size: 24px;
     line-height: 43px;
   }
+  .contact_page .page_banner_layout {
+    height: 56vh;
+}
+
 }
 @media only screen and (max-width: 1200px) {
   .page_banner_content h1 {
@@ -113,19 +212,61 @@
     font-size: 24px;
     line-height: 40px;
   }
+  .contact_deta::before {
+    height: 48%;
+    top: 58px;
+}
+.bottom_banner p {
+  font-size: 20px;
+  line-height: 33px;
+  max-width: 790px;
+}
+
+}
+
+@media(max-width:1050px){
+  .team_card {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.contact_page .page_banner_layout {
+  height: 46vh;
+}
+.servc_modal  .modal-body {
+  padding: 2rem 2.5rem;
+}
+.modal_text {
+  padding-right: 1.5rem;
+}
+.modal_img {
+  padding-left: 1rem;
+}
+.modal_text h1 {
+  font-size: 22px;
+}
+.modal_text li {
+  font-size: 14px;
+}
 }
 @media only screen and (max-width: 991px) {
   .page_banner_content h1 {
-    font-size: 28px;
+    font-size: 30px;
   }
   .bottom_banner p {
     font-size: 21px;
     line-height: 37px;
   }
+  .bottom_banner p {
+    font-size: 20px;
+    line-height: 36px;
+  }
+  .contact_page .page_banner_layout {
+    height: 38vh;
+}
+
 }
 @media only screen and (max-width: 767px) {
   .page_banner_content h1 {
-    font-size: 24px;
+    font-size: 30px;
   }
   .bottom_banner p {
     font-size: 18px;
@@ -134,13 +275,51 @@
   .bottom_banner a {
     font-size: 16px;
   }
+  .contact_page .page_banner_layout {
+    height: 35h;
+}
+.contact-us-form-bg {
+  padding: 60px 0;
+  text-align: center;
+}
+.contact_deta {
+  margin: 50px 0 0 0;
+  text-align: center;
+}
+.social_icons {
+  margin-top: 45px;
+}
+.contact_mrg {
+  text-align: center;
+}
+.servc_modal  .modal-body {
+  padding: 2rem 1rem;
+}
+.servc_modal  .modal-body {
+  padding: 2rem 1rem;
+  row-gap: 2rem;
+  height: 65vh;
+  overflow: auto;
+}
+.modal_text {
+  padding-right: 0;
+  flex: 100%; 
+}
+.modal_img {
+  padding-left: 0;
+  flex: 100%; 
+}
+.modal_text h1 {
+  font-size: 20px;
+}
+
 }
 @media only screen and (max-width: 575px) {
   .page_banner_layout {
     height: 50vh;
   }
   .page_banner_content h1 {
-    font-size: 20px;
+    font-size: 28px;
   }
   .bottom_banner p {
     font-size: 16px;

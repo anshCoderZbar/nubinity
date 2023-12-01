@@ -4,15 +4,15 @@ import { ContactForm } from "components/contact-form";
 import { BottomBanner } from "components/ui/BottomBanner";
 import { PageBanner } from "components/ui/PageBanner";
 
-import { LAYOUT_IMG } from "app/images";
+import { LAYOUT_IMG } from "app/images"; 
 import "styles/Terms.css";
 
 export const TermsServices = () => {
   return (
     <div className="terms_services">
       <PageBanner heading="Terms Of Services" img={LAYOUT_IMG.termsBanner} />
-      <div className="terms_policyies">
-        <div className="container-fluid">
+      <div className="terms_policyies" >
+        <div className="container-fluid" data-aos="fade-up"  data-aos-delay="500" data-aos-duration="1000">
           <div className="terms_lists">
             <h3>1. Introduction</h3>
             <p>

@@ -59,6 +59,7 @@ button {
 input:focus {
   outline: none;
 }
+img{max-width:100% ;}
 .container-fluid {
   padding-left: 100px !important;
   padding-right: 100px !important;
@@ -94,11 +95,11 @@ input:focus {
   color: #fff;
 }
 
-.pad_lf_0 {
+.container-fluid.pad_lf_0 {
   padding-left: 0px !important;
 }
 
-.pad_ri_0 {
+.container-fluid.pad_ri_0 {
   padding-right: 0 !important;
 }
 
@@ -106,6 +107,23 @@ input:focus {
   .main_head_1 {
     font-size: 35px;
   }
+  .container-fluid {
+    padding-left: 80px !important;
+    padding-right: 80px !important;
+}
+
+.serrvices .swiper-pagination-bullet {
+  height: 16px;
+  width: 16px;
+}
+.content_main {
+  font-size: 15px;
+  line-height: 28px;
+}
+.btn_bg {
+  font-size: 14px;
+  padding: 11px 22px;
+}
 }
 @media only screen and (max-width: 1400px) {
   .container-fluid {
@@ -115,37 +133,58 @@ input:focus {
   .main_head_1 {
     font-size: 30px;
   }
-}
-@media only screen and (max-width: 1200px) {
-  .container-fluid {
-    padding-left: 65px !important;
-    padding-right: 65px !important;
-  }
-
-  .main_head_1 {
-    font-size: 26px;
-  }
-}
-@media only screen and (max-width: 991px) {
   .container-fluid {
     padding-left: 50px !important;
     padding-right: 50px !important;
+}
+}
+@media only screen and (max-width: 1200px) {
+  .container-fluid {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+  }
+  .content_main {
+    font-size: 14px;
+}
+.btn_bg {
+  font-size: 13px;
+  padding: 11px 22px;
+}
+ 
+}
+@media only screen and (max-width: 991px) {
+  .container-fluid {
+    padding-left: 22px !important;
+    padding-right: 22px !important;
   }
   .main_head_1 {
-    font-size: 23px;
-  }
+    font-size: 28px;
+}
+ 
 }
 
 @media only screen and (max-width: 767px) {
   .container-fluid {
-    padding-left: 35px !important;
-    padding-right: 35px !important;
-  }
-}
-
-@media only screen and (max-width: 575px) {
-  .container-fluid {
     padding-left: 20px !important;
     padding-right: 20px !important;
   }
+  
+  .vision_content {
+    margin-left: 0;
+    text-align: center;
+  }
+  .container-fluid.pad_ri_0 {
+    padding-right: 20px !important;
+}
+.container-fluid.pad_lf_0 {
+  padding-left: 20px !important;
+}
+
+
+}
+
+@media only screen and (max-width: 575px) {
+ 
+
+
 }

@@ -20,8 +20,8 @@ export const ContactForm = () => {
         <div className="row ">
           <div className="col-lg-6">
             <div className="contact-form-outer">
-              <h2 className="contact_heading_h2">Get in Touch</h2>
-              <form>
+              <h2 className="contact_heading_h2" data-aos="fade-up"  data-aos-delay="500" data-aos-duration="1000">Get in Touch</h2>
+              <form data-aos="fade-up"  data-aos-delay="500" data-aos-duration="1000">
                 <div className="mt-3">
                   <FormInput placeholder="name" type="text" />
                 </div>
@@ -45,8 +45,8 @@ export const ContactForm = () => {
           </div>
           <div className="col-lg-6">
             <div className="contact_deta">
-              <h2 className="main_head_1">Contact Us</h2>
-              <div className="contact_details">
+              <h2 className="main_head_1" data-aos="fade-up"  data-aos-delay="500" data-aos-duration="1000">Contact Us</h2>
+              <div className="contact_details" data-aos="fade-up"  data-aos-delay="500" data-aos-duration="1000">
                 <ul>
                   <li>
                     <a href="#" target="_blank" rel="noreferrer">
@@ -75,39 +75,39 @@ export const ContactForm = () => {
                 </ul>
               </div>
               <div className="social_icons">
-                <h2 className="contact_heading_h2">Social Media</h2>
+                <h2 className="contact_heading_h2" data-aos="fade-up"  data-aos-delay="500" data-aos-duration="1000">Social Media</h2>
                 <ul>
-                  <li>
+                  <li data-aos="fade-up"  data-aos-delay="500" data-aos-duration="1000">
                     <a href="#">
                       <img src={LAYOUT_IMG.facebookImg} alt="social images" />
                     </a>
                   </li>
-                  <li>
+                  <li data-aos="fade-up"  data-aos-delay="500" data-aos-duration="1000">
                     <a href="#">
                       <img src={LAYOUT_IMG.twitterX} alt="social images" />
                     </a>
                   </li>
-                  <li>
+                  <li data-aos="fade-up"  data-aos-delay="500" data-aos-duration="1000">
                     <a href="#">
                       <img src={LAYOUT_IMG.telegram} alt="social images" />
                     </a>
                   </li>
-                  <li>
+                  <li data-aos="fade-up"  data-aos-delay="500" data-aos-duration="1000">
                     <a href="#">
                       <img src={LAYOUT_IMG.linkedin} alt="social images" />
                     </a>
                   </li>
-                  <li>
+                  <li data-aos="fade-up"  data-aos-delay="500" data-aos-duration="1000">
                     <a href="#">
                       <img src={LAYOUT_IMG.instagram} alt="social images" />
                     </a>
                   </li>
-                  <li>
+                  <li data-aos="fade-up"  data-aos-delay="500" data-aos-duration="1000">
                     <a href="#">
                       <img src={LAYOUT_IMG.discord} alt="social images" />
                     </a>
                   </li>
-                  <li>
+                  <li data-aos="fade-up"  data-aos-delay="500" data-aos-duration="1000">
                     <a href="#">
                       <img src={LAYOUT_IMG.teamspeak} alt="social images" />
                     </a>

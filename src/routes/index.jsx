@@ -6,6 +6,7 @@ import Home from "pages/home";
 import ContactUs from "pages/contact-us";
 import { PrivacyPolicy } from "pages/privacy-policy";
 import { TermsServices } from "pages/terms-services";
+import Services from "pages/home/Services";
 
 export const AllRoutes = () => {
   const router = createBrowserRouter([
@@ -14,6 +15,14 @@ export const AllRoutes = () => {
       element: (
         <PublicRoutes>
           <Home />
+        </PublicRoutes>
+      ),
+    },
+    {
+      path: "/services/:id",
+      element: (
+        <PublicRoutes>
+          <Services />
         </PublicRoutes>
       ),
     },

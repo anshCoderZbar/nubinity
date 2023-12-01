@@ -7,12 +7,12 @@ export const BottomBanner = () => {
   return (
     <div className="bottom_banner">
       <div className="container-fluid">
-        <p>
+        <p data-aos="fade-up"  data-aos-delay="500" data-aos-duration="1000">
           We do most of our consulting and implementation remotely. Reach out to
           us or join us on Discord, Telegram, or Apple Chat. We are available
           for free consultation and will create a custom plan to fit your needs.
         </p>
-        <Link to="/">Get started now</Link>
+        <Link to="/" data-aos="fade-up"  data-aos-delay="500" data-aos-duration="1000">Get started now</Link>
       </div>
     </div>
   );

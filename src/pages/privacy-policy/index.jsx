@@ -7,12 +7,12 @@ import { ContactForm } from "components/contact-form";
 
 import "styles/Terms.css";
 
-export const PrivacyPolicy = () => {
+export const PrivacyPolicy = () => { 
   return (
     <div className="privacy_policy">
       <PageBanner img={LAYOUT_IMG.privacyBanner} heading="Privacy Policy" />
-      <div className="terms_policyies">
-        <div className="container-fluid">
+      <div className="terms_policyies" >
+        <div className="container-fluid" data-aos="fade-up"  data-aos-delay="500" data-aos-duration="1000">
           <div className="terms_lists">
             <h3>1. Introduction</h3>
             <p>
