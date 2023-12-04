@@ -32,8 +32,6 @@ export default function Home() {
           </h2>
           <Services />
         </div>
-      </div>
-      <div className="about_us">
         <div className="container-fluid pad_ri_0">
           <div className="row align-items-center ">
             <div className="col-md-6">

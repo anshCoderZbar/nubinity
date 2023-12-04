@@ -69,6 +69,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .service_card {
@@ -146,10 +147,11 @@
 
 /* plans */
 .plans {
-  background-color: #171619;
+  background-color: #16171F;
   background-image: url("assets/plans_layers.png");
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   width: 100%;
   height: 100%;
   padding: 70px 0;
@@ -326,8 +328,9 @@
 .our_team {
   background-color: #151723;
   background-image: url("assets/Privacy_Policy_Bg.jpg");
-  background-position: center;
+  background-position: top center;
   background-size: cover;
+  background-attachment: fixed;
   width: 100%;
   height: 100%;
   padding: 70px 0 100px;
