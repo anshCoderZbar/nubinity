@@ -18,7 +18,7 @@ export const Services = () => {
       spaceBetween={15}
       loop={true}
       modules={[Pagination]}
-      pagination={true}
+      pagination={{ pagination: true, clickable: true }}
       slidesPerGroup={1}
       className="serrvices"
       breakpoints={{
