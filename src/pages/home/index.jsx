@@ -90,7 +90,7 @@ export default function Home() {
                   data-aos-delay="500"
                   data-aos-duration="1000"
                 >
-                  We don’t do free trials or free plans.
+                  We do not offer trials or free plans.
                 </span>
                 <h2
                   data-aos="fade-right"
