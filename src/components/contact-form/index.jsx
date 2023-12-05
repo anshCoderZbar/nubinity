@@ -133,11 +133,11 @@ export const ContactForm = () => {
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="tel:+18337925683">
                       <span>
                         <PhoneCall />
                       </span>
-                      <p> +1 (833) 792-5683, (504) 533-4678</p>
+                      <p>+1 (833) 792-5683</p>
                     </a>
                   </li>
                   <li>
@@ -165,7 +165,11 @@ export const ContactForm = () => {
                     data-aos-delay="500"
                     data-aos-duration="1000"
                   >
-                    <a href="#">
+                    <a
+                      target="_blank"
+                      rel="noreferrer"
+                      href="https://www.facebook.com/profile.php?id=61553977341391"
+                    >
                       <img src={LAYOUT_IMG.facebookImg} alt="social images" />
                     </a>
                   </li>
@@ -201,7 +205,11 @@ export const ContactForm = () => {
                     data-aos-delay="500"
                     data-aos-duration="1000"
                   >
-                    <a href="#">
+                    <a
+                      target="_blank"
+                      rel="noreferrer"
+                      href="https://www.instagram.com/nubinity_offical/?igshid=NGVhN2U2NjQ0Yg%3D%3D"
+                    >
                       <img src={LAYOUT_IMG.instagram} alt="social images" />
                     </a>
                   </li>
@@ -210,7 +218,7 @@ export const ContactForm = () => {
                     data-aos-delay="500"
                     data-aos-duration="1000"
                   >
-                    <a href="#">
+                    <a href="https://discord.gg/Xbxdwhwvsp">
                       <img src={LAYOUT_IMG.discord} alt="social images" />
                     </a>
                   </li>

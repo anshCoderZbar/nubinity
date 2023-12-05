@@ -7,7 +7,7 @@ import { LAYOUT_IMG } from "app/images";
 
 export default function ContactUs() {
   return (
-    <div className="contact_page">
+    <div data-aos="fade-up" data-aos-duration="500" className="contact_page">
       <PageBanner img={LAYOUT_IMG.contactBanner} heading="Contact Us" />
       <div className="contact-us-form-bg">
         <ContactForm />

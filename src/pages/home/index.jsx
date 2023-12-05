@@ -6,10 +6,9 @@ import { Services } from "app/common/Services";
 import { LAYOUT_IMG } from "app/images";
 import {
   Check,
-  Facebook,
   InstagramIcon,
+  Linkedin,
   Quote,
-  TwitchIcon,
   TwitterIcon,
 } from "lucide-react";
 import { PlansData, TeamData } from "mock/Home";
@@ -18,18 +17,11 @@ import { BottomBanner } from "components/ui/BottomBanner";
 
 export default function Home() {
   return (
-    <div className="home_page">
+    <div data-aos="fade-up" data-aos-duration="500" className="home_page">
       <HomeBanner />
       <div className="services_abt_bg">
         <div className="container-fluid">
-          <h2
-            data-aos="fade-up"
-            data-aos-delay="500"
-            data-aos-duration="1000"
-            className="main_head_1 text-center"
-          >
-            Services
-          </h2>
+          <h2 className="main_head_1 text-center">Services</h2>
           <Services />
         </div>
         <div className="container-fluid pad_ri_0">
@@ -158,7 +150,13 @@ export default function Home() {
                                 );
                               })}
                             </ul>
-                            <button className="checkout-btn">Checkout</button>
+                            <a
+                              href={elm?.slug}
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              <button className="checkout-btn">Checkout</button>
+                            </a>
                           </div>
                         </div>
                       );
@@ -351,8 +349,13 @@ export default function Home() {
                       data-aos-delay="500"
                       data-aos-duration="1000"
                     >
-                      <a className="text-white" href="#">
-                        <Facebook />
+                      <a
+                        className="text-white"
+                        target="_blank"
+                        rel="noreferrer"
+                        href={data?.linkedinUrl}
+                      >
+                        <Linkedin />
                       </a>
                       <a className="text-white" href="#">
                         <InstagramIcon />

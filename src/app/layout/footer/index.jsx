@@ -4,11 +4,7 @@ import { Link } from "react-router-dom";
 import { LAYOUT_IMG } from "app/images";
 import { FooterLayout } from "mock/Layout";
 
-import {
-  Facebook,
-  InstagramIcon,
-  TwitterIcon,
-} from "lucide-react";
+import { Facebook, InstagramIcon, TwitterIcon } from "lucide-react";
 
 export const Footer = () => {
   const [cookieNoti, showCookieNoti] = useState(false);
@@ -43,19 +39,29 @@ export const Footer = () => {
               <a href="mailto:hello@nubinity.com">hello@nubinity.com</a>
             </span>
             <span className="call">
-              <a href="tel:+18337925678">+1 (833) 792-5678</a>
+              <a href="tel:+18337925683">+1 (833) 792-5683</a>
             </span>
-              <div className="d-flex gap-2 align-items-center card_icons Ftr_icns">
-                  <a className="text-white" href="#">
-                    <Facebook />
-                  </a>
-                  <a className="text-white" href="#">
-                    <InstagramIcon />
-                  </a>
-                  <a className="text-white" href="#">
-                    <TwitterIcon />
-                  </a>
-              </div>
+            <div className="d-flex gap-2 align-items-center card_icons Ftr_icns">
+              <a
+                className="text-white"
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.facebook.com/profile.php?id=61553977341391"
+              >
+                <Facebook />
+              </a>
+              <a
+                className="text-white"
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.instagram.com/nubinity_offical/?igshid=NGVhN2U2NjQ0Yg%3D%3D"
+              >
+                <InstagramIcon />
+              </a>
+              <a className="text-white" href="#">
+                <TwitterIcon />
+              </a>
+            </div>
           </div>
           {FooterLayout?.map((links) => {
             return (

@@ -105,6 +105,7 @@ export const PlansData = [
     heading: "Managed Endpoint Protection",
     price: "16.99",
     timePeridd: "Per Month",
+    slug: "https://clients.nubinity.com",
     details: [
       {
         desc: "Managed Endpoint Protection",
@@ -138,6 +139,7 @@ export const PlansData = [
     heading: "cPanel Hosting",
     price: "9.99",
     timePeridd: "Per Month",
+    slug: "https://clients.nubinity.com",
     details: [
       {
         desc: "cPanel Hosting",
@@ -162,6 +164,7 @@ export const PlansData = [
     heading: "Professional Services",
     price: "98",
     timePeridd: "Per Hour",
+    slug: "https://clients.nubinity.com",
     details: [
       {
         desc: "Professional Services",
@@ -196,30 +199,38 @@ export const TeamData = [
     id: 1,
     img: require("assets/team1.png"),
     name: "Pavel Glukhikh",
+    linkedinUrl: "",
     designation: "Chief Executive Officer / Founder",
   },
   {
     id: 2,
     img: require("assets/team2.png"),
-    name: "Pavel Glukhikh",
-    designation: "Chief Executive Officer / Founder",
+    name: "Nicolas Pais",
+    linkedinUrl: "",
+    designation: "Chief Innovation Officer / Co-Founder",
   },
   {
     id: 3,
     img: require("assets/team3.png"),
-    name: "Pavel Glukhikh",
-    designation: "Chief Executive Officer / Founder",
+    name: "Juan Cortez ",
+    linkedinUrl:
+      "https://www.linkedin.com/in/juanantoniocortescortes?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app&original_referer=",
+    designation: "Chief Operations Officer",
   },
   {
     id: 4,
     img: require("assets/team4.png"),
-    name: "Pavel Glukhikh",
-    designation: "Chief Executive Officer / Founder",
+    name: "Joshua Freedman ",
+    linkedinUrl:
+      "https://www.linkedin.com/in/joshuafreedman?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app&original_referer=",
+    designation: "Chief Technology Officer",
   },
   {
     id: 5,
     img: require("assets/team5.png"),
-    name: "Pavel Glukhikh",
-    designation: "Chief Executive Officer / Founder",
+    name: "Chancellor Boudreaux ",
+    linkedinUrl:
+      "https://www.linkedin.com/in/chancelor-boudreaux-mba-4b330b85?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    designation: "Chief Financial Officer",
   },
 ];
