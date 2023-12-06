@@ -168,9 +168,9 @@ export default function Home() {
         </div>
       </div>
       <div className="vision ">
-        <div className="container-fluid pad_lf_0">
+        <div className="container-fluid pad_lf_0 corpvisn">
           <div className="row">
-            <div className="col-md-6 ">
+            <div className="col-md-6 visn_imgbx ">
               <img
                 src={LAYOUT_IMG.vision}
                 alt="privacy"
@@ -217,7 +217,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="container-fluid pad_ri_0">
+        <div className="container-fluid pad_ri_0 custmr_privacy">
           <div className="row  col-rev">
             <div className="col-md-6">
               <div className="vision_content">
@@ -255,7 +255,7 @@ export default function Home() {
                 </button>
               </div>
             </div>
-            <div className="col-md-6 ">
+            <div className="col-md-6 visn_imgbx ">
               <img
                 src={LAYOUT_IMG.customerprivacy}
                 alt="privacy"
