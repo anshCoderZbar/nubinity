@@ -1,12 +1,13 @@
 import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
 import { PublicRoutes } from "./public";
-import Home from "pages/home";
-import ContactUs from "pages/contact-us";
+
 import { PrivacyPolicy } from "pages/privacy-policy";
 import { TermsServices } from "pages/terms-services";
-import Services from "pages/home/Services";
+import Home from "pages/home";
+import About from "pages/about";
+import ContactUs from "pages/contact-us";
+import ServicesPage from "pages/services";
 
 export const AllRoutes = () => {
   const router = createBrowserRouter([
@@ -19,10 +20,18 @@ export const AllRoutes = () => {
       ),
     },
     {
-      path: "/services/:id",
+      path: "/about",
       element: (
         <PublicRoutes>
-          <Services />
+          <About />
+        </PublicRoutes>
+      ),
+    },
+    {
+      path: "/services",
+      element: (
+        <PublicRoutes>
+          <ServicesPage />
         </PublicRoutes>
       ),
     },

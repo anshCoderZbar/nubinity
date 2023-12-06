@@ -21,21 +21,21 @@ export const BannerData = [
     heading: "NUBINITY YOUR WORLD CONNECTED",
     bgImg: require("assets/banner_1.jpg"),
     linkTxt: "SEE SERVICES",
-    slug: "/",
+    slug: "/services",
   },
   {
     id: 2,
     heading: "Managed Security Solutions",
     bgImg: require("assets/banner_2.jpg"),
     linkTxt: "View Services",
-    slug: "/",
+    slug: "/services",
   },
   {
     id: 3,
     heading: "Reliable and Affordable Web and App Hosting",
     bgImg: require("assets/banner_3.jpg"),
     linkTxt: "Client Area",
-    slug: "/",
+    slug: "/services",
   },
 ];
 

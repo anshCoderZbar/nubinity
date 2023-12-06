@@ -1,9 +1,5 @@
 import React from "react";
-import { HomeBanner } from "app/common/HomeBanner";
-
-import "styles/Home.css";
-import { Services } from "app/common/Services";
-import { LAYOUT_IMG } from "app/images";
+import { useNavigate } from "react-router-dom";
 import {
   Check,
   InstagramIcon,
@@ -11,15 +7,22 @@ import {
   Quote,
   TwitterIcon,
 } from "lucide-react";
-import { PlansData, TeamData } from "mock/Home";
+
+import "styles/Home.css";
+import { HomeBanner } from "app/common/HomeBanner";
 import { ContactForm } from "components/contact-form";
 import { BottomBanner } from "components/ui/BottomBanner";
 
+import { PlansData, TeamData } from "mock/Home";
+import { Services } from "app/common/Services";
+import { LAYOUT_IMG } from "app/images";
+
 export default function Home() {
+  const navigate = useNavigate();
   return (
     <div data-aos="fade-up" data-aos-duration="500" className="home_page">
       <HomeBanner />
-      <div  className="services_abt_bg">
+      <div className="services_abt_bg">
         <div id="services" className="container-fluid">
           <h2 className="main_head_1 text-center">Services</h2>
           <Services />
@@ -58,6 +61,7 @@ export default function Home() {
                   for a common goal.
                 </p>
                 <button
+                  onClick={() => navigate("/about")}
                   className="btn_bg"
                   data-aos="fade-right"
                   data-aos-delay="500"

@@ -42,7 +42,7 @@ export const FooterLayout = [
       {
         id: 7,
         link: "Contact Us",
-        slug: "/",
+        slug: "/contact-us",
       },
       {
         id: 8,
@@ -52,7 +52,7 @@ export const FooterLayout = [
       {
         id: 9,
         link: "Terms of Service",
-        slug: "/",
+        slug: "/terms-services",
       },
       {
         id: 10,
@@ -68,12 +68,12 @@ export const FooterLayout = [
       {
         id: 11,
         link: "About Us",
-        slug: "/",
+        slug: "/about",
       },
       {
         id: 12,
         link: "Privacy Policy",
-        slug: "/",
+        slug: "/privacy-policy",
       },
       {
         id: 13,

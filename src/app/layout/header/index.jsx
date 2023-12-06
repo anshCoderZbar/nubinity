@@ -38,10 +38,10 @@ export const Header = () => {
             <Link to="/" className="nav-item" style={{ "--i": "0" }}>
               Home
             </Link>
-            <a href="#" className="nav-item" style={{ "--i": "1" }}>
+            <Link to="/about" className="nav-item" style={{ "--i": "1" }}>
               About
-            </a>
-            <a href="/#services" className="nav-item" style={{ "--i": "2" }}>
+            </Link>
+            <a href="/services" className="nav-item" style={{ "--i": "2" }}>
               Services
             </a>
             <Link to="/contact-us" className="nav-item" style={{ "--i": "3" }}>

@@ -4,8 +4,9 @@ import { Pagination } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/pagination";
- 
+
 import { BannerData } from "mock/Home";
+import { Link } from "react-router-dom";
 
 export const HomeBanner = () => {
   return (
@@ -23,11 +24,23 @@ export const HomeBanner = () => {
             <div className="banner_layout">
               <img src={banner?.bgImg} alt="banners" />
               <div className="banner_content">
-                <h1 data-aos="fade-up"  data-aos-delay="500" data-aos-duration="1000">{banner?.heading}</h1>
-                <a href={banner?.slug} className="banner_btn" data-aos="fade-up"
-            data-aos-anchor-placement="top-bottom" data-aos-delay="800" data-aos-duration="1200">
+                <h1
+                  data-aos="fade-up"
+                  data-aos-delay="500"
+                  data-aos-duration="1000"
+                >
+                  {banner?.heading}
+                </h1>
+                <Link
+                  to={banner?.slug}
+                  className="banner_btn"
+                  data-aos="fade-up"
+                  data-aos-anchor-placement="top-bottom"
+                  data-aos-delay="800"
+                  data-aos-duration="1200"
+                >
                   {banner?.linkTxt}
-                </a>
+                </Link>
               </div>
             </div>
           </SwiperSlide>
