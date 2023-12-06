@@ -3,6 +3,7 @@ import "bootstrap/dist/js/bootstrap.bundle";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import * as Sentry from "@sentry/react";
 
 import "./App.css";
 function App() {
@@ -13,4 +14,4 @@ function App() {
   return <AllRoutes />;
 }
 
-export default App;
+export default Sentry.withProfiler(App);

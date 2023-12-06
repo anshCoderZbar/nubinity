@@ -41,9 +41,9 @@ export const Header = () => {
             <a href="#" className="nav-item" style={{ "--i": "1" }}>
               About
             </a>
-            <a href="#" className="nav-item" style={{ "--i": "2" }}>
+            <Link to="#" className="nav-item" style={{ "--i": "2" }}>
               Services
-            </a>
+            </Link>
             <Link to="/contact-us" className="nav-item" style={{ "--i": "3" }}>
               Contact
             </Link>
