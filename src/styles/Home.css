@@ -8,7 +8,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover; 
-  position: absolute;
+  position: absolute; 
   top: 0;
   left: 0;
   z-index: -1;
@@ -272,6 +272,7 @@
 /* vision */
 .vision {
   background-color: #171820;
+  padding-top: 4rem;
 }
 .vision_content {
   margin-left: 50px;

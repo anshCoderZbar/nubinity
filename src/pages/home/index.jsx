@@ -169,7 +169,7 @@ export default function Home() {
       </div>
       <div className="vision ">
         <div className="container-fluid pad_lf_0">
-          <div className="row align-items-center">
+          <div className="row">
             <div className="col-md-6 ">
               <img
                 src={LAYOUT_IMG.vision}
@@ -218,7 +218,7 @@ export default function Home() {
           </div>
         </div>
         <div className="container-fluid pad_ri_0">
-          <div className="row align-items-center col-rev">
+          <div className="row  col-rev">
             <div className="col-md-6">
               <div className="vision_content">
                 <h2
