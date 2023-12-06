@@ -210,6 +210,7 @@ export default function Home() {
                   connections that every new day brings.
                 </p>
                 <button
+                  onClick={() => navigate("/contact-us")}
                   className="btn_bg"
                   data-aos="fade-left"
                   data-aos-delay="500"
@@ -250,6 +251,7 @@ export default function Home() {
                   privacy, where your data remains exclusively yours.
                 </p>
                 <button
+                  onClick={() => navigate("/contact-us")}
                   className="btn_bg"
                   data-aos="fade-right"
                   data-aos-delay="500"

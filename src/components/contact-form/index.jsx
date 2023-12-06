@@ -173,34 +173,7 @@ export const ContactForm = () => {
                       <img src={LAYOUT_IMG.facebookImg} alt="social images" />
                     </a>
                   </li>
-                  <li
-                    data-aos="fade-up"
-                    data-aos-delay="500"
-                    data-aos-duration="1000"
-                  >
-                    <a href="#">
-                      <img src={LAYOUT_IMG.twitterX} alt="social images" />
-                    </a>
-                  </li>
-                  <li
-                    data-aos="fade-up"
-                    data-aos-delay="500"
-                    data-aos-duration="1000"
-                  >
-                    <a href="#">
-                      <img src={LAYOUT_IMG.telegram} alt="social images" />
-                    </a>
-                  </li>
-                  <li
-                    data-aos="fade-up"
-                    data-aos-delay="500"
-                    data-aos-duration="1000"
-                  >
-                    <a href="#">
-                      <img src={LAYOUT_IMG.linkedin} alt="social images" />
-                    </a>
-                  </li>
-                  <li
+                  {/* <li
                     data-aos="fade-up"
                     data-aos-delay="500"
                     data-aos-duration="1000"
@@ -212,13 +185,52 @@ export const ContactForm = () => {
                     >
                       <img src={LAYOUT_IMG.instagram} alt="social images" />
                     </a>
+                  </li> */}
+                  {/* <li
+                    data-aos="fade-up"
+                    data-aos-delay="500"
+                    data-aos-duration="1000"
+                  >
+                    <a href="#">
+                      <img src={LAYOUT_IMG.twitterX} alt="social images" />
+                    </a>
+                  </li> */}
+                  <li
+                    data-aos="fade-up"
+                    data-aos-delay="500"
+                    data-aos-duration="1000"
+                  >
+                    <a
+                      target="_blank"
+                      rel="noreferrer"
+                      href="https://t.me/@Nubinity"
+                    >
+                      <img src={LAYOUT_IMG.telegram} alt="social images" />
+                    </a>
                   </li>
                   <li
                     data-aos="fade-up"
                     data-aos-delay="500"
                     data-aos-duration="1000"
                   >
-                    <a href="https://discord.gg/Xbxdwhwvsp">
+                    <a
+                      target="_blank"
+                      rel="noreferrer"
+                      href="https://www.linkedin.com/company/nubinity/"
+                    >
+                      <img src={LAYOUT_IMG.linkedin} alt="social images" />
+                    </a>
+                  </li>
+                  <li
+                    data-aos="fade-up"
+                    data-aos-delay="500"
+                    data-aos-duration="1000"
+                  >
+                    <a
+                      target="_blank"
+                      rel="noreferrer"
+                      href="https://discord.gg/Xbxdwhwvsp"
+                    >
                       <img src={LAYOUT_IMG.discord} alt="social images" />
                     </a>
                   </li>
@@ -227,7 +239,11 @@ export const ContactForm = () => {
                     data-aos-delay="500"
                     data-aos-duration="1000"
                   >
-                    <a href="#">
+                    <a
+                      target="_blank"
+                      rel="noreferrer"
+                      href="https://voice.nubinity.com"
+                    >
                       <img src={LAYOUT_IMG.teamspeak} alt="social images" />
                     </a>
                   </li>

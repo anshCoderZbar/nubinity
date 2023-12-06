@@ -77,17 +77,17 @@ export const Footer = () => {
               >
                 <Facebook />
               </a>
-              <a
+              {/* <a
                 className="text-white"
                 target="_blank"
                 rel="noreferrer"
                 href="https://www.instagram.com/nubinity_offical/?igshid=NGVhN2U2NjQ0Yg%3D%3D"
               >
                 <InstagramIcon />
-              </a>
-              <a className="text-white" href="#">
+              </a> */}
+              {/* <a className="text-white" href="#">
                 <TwitterIcon />
-              </a>
+              </a> */}
             </div>
           </div>
           {FooterLayout?.map((links) => {
