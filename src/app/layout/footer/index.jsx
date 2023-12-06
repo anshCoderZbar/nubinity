@@ -14,8 +14,6 @@ export const Footer = () => {
     }, 2500);
   }, []);
 
-  console.log(process.env.REACT_APP_CHAT_WIDGET_WEBSITETOKEN);
-
   useEffect(() => {
     const BASE_URL = "https://app.chatwoot.com";
     const script = document.createElement("script");
