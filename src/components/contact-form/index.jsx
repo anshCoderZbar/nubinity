@@ -5,30 +5,21 @@ import { LocateFixedIcon, Mail, PhoneCall } from "lucide-react";
 import React, { useState } from "react";
 
 import "styles/Contact.css";
+import { formState, validateValues } from "./validation";
 export const ContactForm = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phoneNo: "",
-    typeOfService: "",
-    message: "",
-  });
+  const [errors, setError] = useState({});
+  const [formData, setFormData] = useState(formState);
   const handleChange = (e) => {
     const { name, value } = e?.target;
     setFormData({ ...formData, [name]: value });
   };
 
   const handleSubmit = (e) => {
-    const config = {
-      SecureToken: "9fae76f4-4fc9-4444-87f4-05de6566c22b",
-      To: "tohecen234@gearstag.com",
-      From: formData?.email,
-      Subject: `Name:${formData?.name} Service:${formData?.typeOfService}`,
-      Body: `Name:${formData?.name} Email:${formData?.email} Phone Number: ${formData?.phoneNo} Service:${formData?.typeOfService} Message:${formData?.message}`,
-    };
-
     e.preventDefault();
-    window.Email.send(config).then((res) => console.log(res));
+    setError(validateValues(formData));
+    if (Object.keys(validateValues(formData)).length < 1) {
+      console.log(formData);
+    }
   };
 
   return (
@@ -59,6 +50,9 @@ export const ContactForm = () => {
                     value={formData?.name}
                     onChange={handleChange}
                   />
+                  {errors?.name && (
+                    <span className="text-danger">{errors?.name}</span>
+                  )}
                 </div>
                 <div className="mt-3">
                   <FormInput
@@ -68,6 +62,9 @@ export const ContactForm = () => {
                     value={formData?.email}
                     onChange={handleChange}
                   />
+                  {errors?.email && (
+                    <span className="text-danger">{errors?.email}</span>
+                  )}
                 </div>
                 <div className="mt-3">
                   <FormInput
@@ -77,6 +74,9 @@ export const ContactForm = () => {
                     value={formData?.phoneNo}
                     onChange={handleChange}
                   />
+                  {errors?.phoneNo && (
+                    <span className="text-danger">{errors?.phoneNo}</span>
+                  )}
                 </div>
                 <div className="mt-3">
                   <FormInput
@@ -86,6 +86,9 @@ export const ContactForm = () => {
                     value={formData?.typeOfService}
                     onChange={handleChange}
                   />
+                  {errors?.typeOfService && (
+                    <span className="text-danger">{errors?.typeOfService}</span>
+                  )}
                 </div>
                 <div className="mt-3">
                   <Textarea
@@ -95,6 +98,9 @@ export const ContactForm = () => {
                     value={formData?.message}
                     onChange={handleChange}
                   />
+                  {errors?.message && (
+                    <span className="text-danger">{errors?.message}</span>
+                  )}
                 </div>
                 <div className="mt-3">
                   <input
@@ -256,3 +262,14 @@ export const ContactForm = () => {
     </div>
   );
 };
+
+// const config = {
+//   SecureToken: "9fae76f4-4fc9-4444-87f4-05de6566c22b",
+//   To: "tohecen234@gearstag.com",
+//   From: formData?.email,
+//   Subject: `Name:${formData?.name} Service:${formData?.typeOfService}`,
+//   Body: `Name:${formData?.name} Email:${formData?.email} Phone Number: ${formData?.phoneNo} Service:${formData?.typeOfService} Message:${formData?.message}`,
+// };
+
+// e.preventDefault();
+// window.Email.send(config).then((res) => console.log(res));
