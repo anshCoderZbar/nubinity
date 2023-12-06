@@ -19,8 +19,8 @@ export default function Home() {
   return (
     <div data-aos="fade-up" data-aos-duration="500" className="home_page">
       <HomeBanner />
-      <div className="services_abt_bg">
-        <div className="container-fluid">
+      <div  className="services_abt_bg">
+        <div id="services" className="container-fluid">
           <h2 className="main_head_1 text-center">Services</h2>
           <Services />
         </div>
