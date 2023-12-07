@@ -7,6 +7,7 @@ import React, { useState } from "react";
 
 import "styles/Contact.css";
 import { formState, validateValues } from "./validation";
+import axios from "axios";
 export const ContactForm = () => {
   const [errors, setError] = useState({});
   const [loading, setLoading] = useState(false);
@@ -22,24 +23,17 @@ export const ContactForm = () => {
     if (Object.keys(validateValues(formData)).length < 1) {
       setLoading(true);
       try {
-        const response = await fetch(
-          `${process.env.REACT_APP_BASE_URL}/mail/mail.php`,
+        const result = await axios.post(
+          `${process.env.REACT_APP_BASE_URL}/mail.php`,
           {
-            method: "post",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-              name: formData?.name,
-              email: formData?.email,
-              phoneNo: formData?.phoneNo,
-              typeOfService: formData?.typeOfService,
-              message: formData?.message,
-            }),
+            name: formData?.name,
+            email: formData?.email,
+            phoneNo: formData?.phoneNo,
+            typeOfService: formData?.typeOfService,
+            message: formData?.message,
           }
         );
-        const result = await response.json();
-        console.log(result);
+        console.log(result.data);
       } catch (error) {
         setLoading(false);
         console.error("Error:", error);
