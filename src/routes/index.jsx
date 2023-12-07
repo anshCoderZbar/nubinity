@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route } from "react-router-dom";
 import { PublicRoutes } from "./public";
 
 import { PrivacyPolicy } from "pages/privacy-policy";
@@ -8,12 +8,14 @@ import Home from "pages/home";
 import About from "pages/about";
 import ContactUs from "pages/contact-us";
 import ServicesPage from "pages/services";
+import { ApmRoutes } from "@elastic/apm-rum-react";
 
 export const AllRoutes = () => {
   return (
     <BrowserRouter>
-      <Routes>
+      <ApmRoutes>
         <Route
+          exact
           path="/"
           element={
             <PublicRoutes>
@@ -22,6 +24,7 @@ export const AllRoutes = () => {
           }
         />
         <Route
+          exact
           path="/about"
           element={
             <PublicRoutes>
@@ -30,6 +33,7 @@ export const AllRoutes = () => {
           }
         />
         <Route
+          exact
           path="/services"
           element={
             <PublicRoutes>
@@ -38,6 +42,7 @@ export const AllRoutes = () => {
           }
         />
         <Route
+          exact
           path="/contact-us"
           element={
             <PublicRoutes>
@@ -46,6 +51,7 @@ export const AllRoutes = () => {
           }
         />
         <Route
+          exact
           path="/privacy-policy"
           element={
             <PublicRoutes>
@@ -54,6 +60,7 @@ export const AllRoutes = () => {
           }
         />
         <Route
+          exact
           path="/terms-services"
           element={
             <PublicRoutes>
@@ -61,7 +68,7 @@ export const AllRoutes = () => {
             </PublicRoutes>
           }
         />
-      </Routes>
+      </ApmRoutes>
     </BrowserRouter>
   );
 };
