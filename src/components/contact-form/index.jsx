@@ -8,17 +8,41 @@ import "styles/Contact.css";
 import { formState, validateValues } from "./validation";
 export const ContactForm = () => {
   const [errors, setError] = useState({});
+  const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState(formState);
   const handleChange = (e) => {
     const { name, value } = e?.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setError(validateValues(formData));
     if (Object.keys(validateValues(formData)).length < 1) {
-      console.log(formData);
+      setLoading(true);
+      try {
+        const response = await fetch(
+          `${process.env.REACT_APP_BASE_URL}/mail/mail.php`,
+          {
+            method: "post",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              name: formData?.name,
+              email: formData?.email,
+              phoneNo: formData?.phoneNo,
+              typeOfService: formData?.typeOfService,
+              message: formData?.message,
+            }),
+          }
+        );
+        const result = await response.json();
+        console.log(result);
+      } catch (error) {
+        setLoading(false);
+        console.error("Error:", error);
+      }
     }
   };
 
@@ -57,7 +81,7 @@ export const ContactForm = () => {
                 <div className="mt-3">
                   <FormInput
                     placeholder="email"
-                    type="text"
+                    type="email"
                     name="email"
                     value={formData?.email}
                     onChange={handleChange}
@@ -105,9 +129,10 @@ export const ContactForm = () => {
                 <div className="mt-3">
                   <input
                     type="submit"
-                    className="submit"
+                    className={`submit ${loading ? "disabled_class" : ""}`}
                     value="submit"
                     onChange={handleChange}
+                    disabled={loading}
                   />
                 </div>
               </form>

@@ -6,27 +6,27 @@ export const FooterLayout = [
       {
         id: 1,
         link: "Knowledgebase",
-        slug: "/",
+        slug: "/privacy-policy",
       },
       {
         id: 2,
         link: "Network Status ",
-        slug: "/",
+        slug: "/privacy-policy",
       },
       {
         id: 3,
         link: "Downloads",
-        slug: "/",
+        slug: "/privacy-policy",
       },
       {
         id: 4,
         link: "Announcements",
-        slug: "/",
+        slug: "/privacy-policy",
       },
       {
         id: 5,
         link: "WISP Control Panel ",
-        slug: "/",
+        slug: "/privacy-policy",
       },
     ],
   },
@@ -37,7 +37,7 @@ export const FooterLayout = [
       {
         id: 6,
         link: "Submit Support Ticket",
-        slug: "/",
+        slug: "/privacy-policy",
       },
       {
         id: 7,
@@ -47,7 +47,7 @@ export const FooterLayout = [
       {
         id: 8,
         link: "Abuse Reporting",
-        slug: "/",
+        slug: "/privacy-policy",
       },
       {
         id: 9,
@@ -57,7 +57,7 @@ export const FooterLayout = [
       {
         id: 10,
         link: "FAQ",
-        slug: "/",
+        slug: "/privacy-policy",
       },
     ],
   },
@@ -78,17 +78,17 @@ export const FooterLayout = [
       {
         id: 13,
         link: "Investor Relations",
-        slug: "/",
+        slug: "/privacy-policy",
       },
       {
         id: 14,
         link: "Threads",
-        slug: "/",
+        slug: "/privacy-policy",
       },
       {
         id: 15,
         link: "Client Area",
-        slug: "/",
+        slug: "/privacy-policy",
       },
     ],
   },
@@ -109,17 +109,17 @@ export const FooterLayout = [
       {
         id: 18,
         link: "Social media links",
-        slug: "/",
+        slug: "/privacy-policy",
       },
       {
         id: 19,
         link: "Threads",
-        slug: "/",
+        slug: "/privacy-policy",
       },
       {
         id: 20,
         link: "Client Area",
-        slug: "/",
+        slug: "/privacy-policy",
       },
     ],
     paymentLinks: true,
