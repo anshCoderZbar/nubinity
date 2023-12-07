@@ -4,7 +4,13 @@ import { Link } from "react-router-dom";
 import { LAYOUT_IMG } from "app/images";
 import { FooterLayout } from "mock/Layout";
 
-import { Facebook, InstagramIcon, TwitterIcon } from "lucide-react";
+import {
+  Facebook,
+  InstagramIcon,
+  Linkedin,
+  Send,
+  TwitterIcon,
+} from "lucide-react";
 
 export const Footer = () => {
   const [cookieNoti, showCookieNoti] = useState(false);
@@ -68,27 +74,64 @@ export const Footer = () => {
             <span className="call">
               <a href="tel:+18337925683">+1 (833) 792-5683</a>
             </span>
-            <div className="d-flex gap-2 align-items-center card_icons Ftr_icns">
+            <div className="d-flex  align-items-center card_icons Ftr_icns">
               <a
-                className="text-white"
+                className="footer_icon fb_img"
                 target="_blank"
                 rel="noreferrer"
                 href="https://www.facebook.com/profile.php?id=61553977341391"
               >
-                <Facebook />
+                <img src={require("assets/facebook.png")} />
               </a>
-              {/* <a
-                className="text-white"
+              <a
+                className="footer_icon"
                 target="_blank"
                 rel="noreferrer"
                 href="https://www.instagram.com/nubinity_offical/?igshid=NGVhN2U2NjQ0Yg%3D%3D"
               >
-                <InstagramIcon />
-              </a> */}
-              {/* <a className="text-white" href="#">
-                <TwitterIcon />
-              </a> */}
+                <img src={require("assets/instagram.png")} />
+              </a>
+              <a
+                className="threads_img footer_icon"
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.threads.net/@nubinity_offical"
+              >
+                <img src={require("assets/threads.png")} />
+              </a>
+              <a
+                className=" footer_icon"
+                target="_blank"
+                rel="noreferrer"
+                href="https://t.me/@Nubinity"
+              >
+                <img src={require("assets/telegram.png")} />
+              </a>
+              <a
+                className="footer_icon"
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.linkedin.com/company/nubinity/"
+              >
+                <img src={require("assets/linked_in.png")} />
+              </a>
+              <a
+                className=" footer_icon "
+                target="_blank"
+                rel="noreferrer"
+                href="https://discord.gg/Xbxdwhwvsp"
+              >
+                <img src={require("assets/discord.png")} />
+              </a>
             </div>
+            <a
+              className=" footer_icon "
+              target="_blank"
+              rel="noreferrer"
+              href="ts3server://voice.nubinity.com"
+            >
+              <img src={require("assets/teamspeak.png")} />
+            </a>
           </div>
           {FooterLayout?.map((links) => {
             return (

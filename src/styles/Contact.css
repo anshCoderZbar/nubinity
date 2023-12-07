@@ -173,6 +173,9 @@ textarea.form-control {
   background-color: #077ae3;
   color: #fff;
 }
+.thread_icon {
+  filter: invert(1);
+}
 
 @media only screen and (max-width: 1600px) {
   .contact_heading_h2 {

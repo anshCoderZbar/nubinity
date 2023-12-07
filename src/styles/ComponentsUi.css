@@ -146,7 +146,7 @@ span.Close_modal {
   object-fit: cover;
   object-position: center;
 }
-.modal_text button {
+.modal_text a {
   margin-left: 18px;
 }
 

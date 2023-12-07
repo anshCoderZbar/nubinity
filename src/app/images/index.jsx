@@ -8,7 +8,7 @@ export const LAYOUT_IMG = {
   aboutBanner: require("assets/about-us.png"),
   contactBanner: require("assets/contact-us.jpg"),
   facebookImg: require("assets/facebook.png"),
-  twitterX: require("assets/twitterx.png"),
+  threads: require("assets/threads.png"),
   telegram: require("assets/telegram.png"),
   linkedin: require("assets/linked_in.png"),
   instagram: require("assets/instagram.png"),

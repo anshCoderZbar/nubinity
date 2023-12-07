@@ -222,9 +222,11 @@ export default function Home() {
             </div>
           </div>
         </div>
+        {/*  */}
+
         <div className="container-fluid pad_ri_0 custmr_privacy">
           <div className="row  col-rev">
-            <div className="col-md-6">
+            <div className="col-md-6 ">
               <div className="vision_content">
                 <h2
                   className="main_head_1"
@@ -271,41 +273,45 @@ export default function Home() {
               />
             </div>
           </div>
+        </div>
+        <div className="ceo_message_section">
           <div className="btm_content">
-            <p
-              className="mb-0"
-              data-aos="fade-up"
-              data-aos-delay="500"
-              data-aos-duration="1000"
-            >
-              <span className="lower_quote">
-                <Quote />
+            <div className="container-fluid">
+              <p
+                className="mb-0"
+                data-aos="fade-up"
+                data-aos-delay="500"
+                data-aos-duration="1000"
+              >
+                <span className="lower_quote">
+                  <Quote />
+                </span>
+                As CEO of Nubinity, I stand firmly against the commoditization
+                of personal data. Our clients' privacy is not for sale, at any
+                price. We have built our reputation on trust and integrity, and
+                we will continue to lead by example, ensuring that our clients'
+                data remains secure and their dignity intact.
+                <span className="upper_quote">
+                  <Quote />
+                </span>
+              </p>
+              <span
+                className="ceo_name"
+                data-aos="fade-up"
+                data-aos-delay="500"
+                data-aos-duration="1000"
+              >
+                Pavel Glukhikh
               </span>
-              As CEO of Nubinity, I stand firmly against the commoditization of
-              personal data. Our clients' privacy is not for sale, at any price.
-              We have built our reputation on trust and integrity, and we will
-              continue to lead by example, ensuring that our clients' data
-              remains secure and their dignity intact.
-              <span className="upper_quote">
-                <Quote />
+              <span
+                className="designaton"
+                data-aos="fade-up"
+                data-aos-delay="500"
+                data-aos-duration="1000"
+              >
+                Chief Executive Officer | Nubinity
               </span>
-            </p>
-            <span
-              className="ceo_name"
-              data-aos="fade-up"
-              data-aos-delay="500"
-              data-aos-duration="1000"
-            >
-              Pavel Glukhikh
-            </span>
-            <span
-              className="designaton"
-              data-aos="fade-up"
-              data-aos-delay="500"
-              data-aos-duration="1000"
-            >
-              Chief Executive Officer | Nubinity
-            </span>
+            </div>
           </div>
         </div>
       </div>

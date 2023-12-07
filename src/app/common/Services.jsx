@@ -108,14 +108,17 @@ export const Services = () => {
                 ransomware, and sophisticated cyber-attacks.
               </li>
             </ul>
-            <button
+            <a
+              href="https://clients.nubinity.com/"
+              target="_blank"
+              rel="noreferrer"
               className="btn_bg"
               data-aos="fade-up"
               data-aos-delay="500"
               data-aos-duration="1000"
             >
               Order
-            </button>
+            </a>
           </div>
           <div className="modal_img">
             <img

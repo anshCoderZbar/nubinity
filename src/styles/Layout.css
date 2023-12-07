@@ -222,8 +222,8 @@
 .footer_head span.call {
   margin-top: 5px;
 }
-.card_icons.Ftr_icns {
-  margin-top: 16px;
+.Ftr_icns {
+  gap: 10px;
 }
 
 .footer_head span a {
@@ -468,6 +468,18 @@
   border-top: 3px solid #fff;
   border-radius: 50%;
   animation: spinInner 1s linear infinite;
+}
+.footer_icon img {
+  height: 23px;
+  width: 24px;
+  margin-top: 15px;
+}
+
+.fb_img img {
+  width: 16px;
+}
+.threads_img {
+  filter: invert(1);
 }
 @keyframes spin {
   0% {

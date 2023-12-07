@@ -204,7 +204,7 @@ export const ContactForm = () => {
                       <img src={LAYOUT_IMG.facebookImg} alt="social images" />
                     </a>
                   </li>
-                  {/* <li
+                  <li
                     data-aos="fade-up"
                     data-aos-delay="500"
                     data-aos-duration="1000"
@@ -216,16 +216,24 @@ export const ContactForm = () => {
                     >
                       <img src={LAYOUT_IMG.instagram} alt="social images" />
                     </a>
-                  </li> */}
-                  {/* <li
+                  </li>
+                  <li
                     data-aos="fade-up"
                     data-aos-delay="500"
                     data-aos-duration="1000"
                   >
-                    <a href="#">
-                      <img src={LAYOUT_IMG.twitterX} alt="social images" />
+                    <a
+                      target="_blank"
+                      rel="noreferrer"
+                      href="https://www.threads.net/@nubinity_offical"
+                    >
+                      <img
+                        src={LAYOUT_IMG.threads}
+                        alt="social images"
+                        className="thread_icon"
+                      />
                     </a>
-                  </li> */}
+                  </li>
                   <li
                     data-aos="fade-up"
                     data-aos-delay="500"
@@ -273,7 +281,7 @@ export const ContactForm = () => {
                     <a
                       target="_blank"
                       rel="noreferrer"
-                      href="https://voice.nubinity.com"
+                      href=" ts3server://voice.nubinity.com"
                     >
                       <img src={LAYOUT_IMG.teamspeak} alt="social images" />
                     </a>
@@ -287,14 +295,3 @@ export const ContactForm = () => {
     </div>
   );
 };
-
-// const config = {
-//   SecureToken: "9fae76f4-4fc9-4444-87f4-05de6566c22b",
-//   To: "tohecen234@gearstag.com",
-//   From: formData?.email,
-//   Subject: `Name:${formData?.name} Service:${formData?.typeOfService}`,
-//   Body: `Name:${formData?.name} Email:${formData?.email} Phone Number: ${formData?.phoneNo} Service:${formData?.typeOfService} Message:${formData?.message}`,
-// };
-
-// e.preventDefault();
-// window.Email.send(config).then((res) => console.log(res));

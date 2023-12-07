@@ -7,8 +7,8 @@
 .banner_layout img {
   width: 100%;
   height: 100%;
-  object-fit: cover; 
-  position: absolute; 
+  object-fit: cover;
+  position: absolute;
   top: 0;
   left: 0;
   z-index: -1;
@@ -147,7 +147,7 @@
 
 /* plans */
 .plans {
-  background-color: #16171F;
+  background-color: #16171f;
   background-image: url("assets/plans_layers.png");
   background-size: cover;
   background-position: center;
@@ -240,7 +240,6 @@
   bottom: 0;
   margin: auto;
   transition: 0.5s ease-in-out;
-  
 }
 
 .checkout-btn {
@@ -326,6 +325,9 @@
   margin-top: 10px;
 }
 .custmr_privacy {
+  background-color: #0788ff;
+}
+.ceo_message_section {
   background-color: #171619;
 }
 
@@ -474,61 +476,60 @@
   }
   .banner_btn {
     font-size: 16px;
-}
+  }
   .plans_content span {
     font-size: 16px;
-}
-.plans_content h2 {
-  font-size: 42px;
-  line-height: 52px;
-}
-.plans_content p {
-  font-size: 16px;
-}
-.price_card_bg h3 {
-  font-size: 20px;
-}
-.price {
-  font-size: 45px;
-}
-.checkout-btn {
-  font-size: 13px;
-  padding: 9px 28px;
-}
-.price_card_bg {
-  padding: 28px 20px;
-}
-.service-card-body p {
-  font-size: 16px;
-}
-.dot_before {
-  font-size: 20px;
-}
-.dot {
-  width: 45px;
-  height: 45px;
-}
-.dot_after {
-  font-size: 15px;
-}
-.dot_inner {
-  height: 22px;
-  width: 22px;
-}
-.progress-container {
-  padding: 40px 46px;
-}
-.serrvices .swiper-pagination-bullet {
-  height: 14px;
-  width: 14px;
-}
-.plans_desc li {
-  font-size: 13px;
-}
-.designaton {
-  font-size: 16px;
-}
-
+  }
+  .plans_content h2 {
+    font-size: 42px;
+    line-height: 52px;
+  }
+  .plans_content p {
+    font-size: 16px;
+  }
+  .price_card_bg h3 {
+    font-size: 20px;
+  }
+  .price {
+    font-size: 45px;
+  }
+  .checkout-btn {
+    font-size: 13px;
+    padding: 9px 28px;
+  }
+  .price_card_bg {
+    padding: 28px 20px;
+  }
+  .service-card-body p {
+    font-size: 16px;
+  }
+  .dot_before {
+    font-size: 20px;
+  }
+  .dot {
+    width: 45px;
+    height: 45px;
+  }
+  .dot_after {
+    font-size: 15px;
+  }
+  .dot_inner {
+    height: 22px;
+    width: 22px;
+  }
+  .progress-container {
+    padding: 40px 46px;
+  }
+  .serrvices .swiper-pagination-bullet {
+    height: 14px;
+    width: 14px;
+  }
+  .plans_desc li {
+    font-size: 13px;
+  }
+  .designaton {
+    font-size: 16px;
+  }
 }
 @media only screen and (max-width: 1440px) {
   .banner_layout {
@@ -545,44 +546,42 @@
     min-height: 270px;
     max-height: 280px;
     gap: 25px;
-}
-.service-card-body img {
-  width: 60px;
-}
-.plans_content h2 {
-  font-size: 36px;
-  line-height: 45px;
-}
-.price {
-  font-size: 40px;
-}
-.plans_desc li svg {
-  height: 15px;
-  width: 15px;
-}
-.plans_desc li {
-  padding-left: 1.5rem;
-}
-.team_card {
-  gap: 35px;
-}
-.member_name {
-  font-size: 16px;
-}
-.member_designation {
-  font-size: 13px;
-}
-.card_icons a svg {
-  width: 20px;
-  height: 20px;
-}
+  }
+  .service-card-body img {
+    width: 60px;
+  }
+  .plans_content h2 {
+    font-size: 36px;
+    line-height: 45px;
+  }
+  .price {
+    font-size: 40px;
+  }
+  .plans_desc li svg {
+    height: 15px;
+    width: 15px;
+  }
+  .plans_desc li {
+    padding-left: 1.5rem;
+  }
+  .team_card {
+    gap: 35px;
+  }
+  .member_name {
+    font-size: 16px;
+  }
+  .member_designation {
+    font-size: 13px;
+  }
+  .card_icons a svg {
+    width: 20px;
+    height: 20px;
+  }
 
-.bottom_banner p {
-  font-size: 20px;
-  line-height: 36px;
-}
-
-
+  .bottom_banner p {
+    font-size: 20px;
+    line-height: 36px;
+  }
 }
 @media only screen and (max-width: 1200px) {
   .banner_content h1 {
@@ -592,123 +591,118 @@
   .serrvices .swiper-pagination-bullet {
     height: 12px;
     width: 12px;
+  }
+  .service_card {
+    margin-top: 30px;
+  }
+  .plans_content span {
+    font-size: 13px;
+  }
+  .plans_content h2 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .plans_content p {
+    font-size: 14px;
+  }
+  .price-discounted {
+    font-size: 15px;
+  }
+  .price_card_bg h3 {
+    font-size: 18px;
+  }
+  .price {
+    font-size: 28px;
+  }
+  .price span {
+    font-size: 13px;
+  }
+  .price_card_bg {
+    padding: 28px 15px;
+  }
+  .vision_content {
+    margin-left: 25px;
+  }
+  .cards_outer {
+    margin-top: 2.5rem;
+  }
+  .btm_content p {
+    font-size: 16px;
+    max-width: 870px;
+    margin: 0 auto;
+  }
+  .designaton {
+    font-size: 14px;
+  }
+  .dot_before {
+    font-size: 17px;
+  }
+  .dot {
+    width: 40px;
+    height: 40px;
+  }
+  .dot_inner {
+    height: 18px;
+    width: 18px;
+  }
+  .progress-step {
+    height: 7px;
+  }
+  .progress-container {
+    height: 330px;
+  }
+  .teams h2 {
+    margin-bottom: 30px;
+  }
+  .team_card {
+    margin-top: 4.5rem;
+  }
+  .progress-container {
+    margin-top: 30px;
+  }
 }
-.service_card {
-  margin-top: 30px;
-}
-.plans_content span {
-  font-size: 13px;
-}
-.plans_content h2 {
-  font-size: 30px;
-  line-height: 38px;
-}
-.plans_content p {
-  font-size: 14px;
-}
-.price-discounted {
-  font-size: 15px;
-}
-.price_card_bg h3 {
-  font-size: 18px;
-}
-.price {
-  font-size: 28px;
-}
-.price span {
-  font-size: 13px;
-}
-.price_card_bg {
-  padding: 28px 15px;
-}
-.vision_content {
-  margin-left: 25px;
-}
-.cards_outer {
-  margin-top: 2.5rem;
-}
-.btm_content p {
-  font-size: 16px;
-  max-width: 870px;
-  margin: 0 auto;
-}
-.designaton {
-  font-size: 14px;
-}
-.dot_before {
-  font-size: 17px;
-}
-.dot {
-  width: 40px;
-  height: 40px;
-}
-.dot_inner {
-  height: 18px;
-  width: 18px;
-}
-.progress-step {
-  height: 7px;
-}
-.progress-container {
-  height: 330px;
-}
-.teams h2 {
-  margin-bottom: 30px;
-}
-.team_card {
-  margin-top: 4.5rem;
-}
-.progress-container {
-  margin-top: 30px;
-}
-
-
-}
-
 
 @media only screen and (max-width: 991px) {
   .banner_content h1 {
     font-size: 30px;
-    margin-bottom:1.5rem;
-}
+    margin-bottom: 1.5rem;
+  }
   .banner_btn {
     margin-top: 10px;
   }
   .services_abt_bg {
     padding: 4rem 0 1rem;
-}
-.serrvices .swiper-pagination-bullet {
-  height: 10px;
-  width: 10px;
-}
-.price span {
-  font-size: 12px;
-}
-.plans_desc li {
-  margin-top: 15px;
-}
-.btm_content {
-  padding: 50px 22px 50px 0;
-}
-.vision_content {
-  margin-left: 5px;
-}
+  }
+  .serrvices .swiper-pagination-bullet {
+    height: 10px;
+    width: 10px;
+  }
+  .price span {
+    font-size: 12px;
+  }
+  .plans_desc li {
+    margin-top: 15px;
+  }
+  .btm_content {
+    padding: 50px 22px 50px 0;
+  }
+  .vision_content {
+    margin-left: 5px;
+  }
 
-.dot_after {
-  font-size: 12px;
-  max-width: 200px;
-}
-.dot_before {
-  font-size: 16px;
-}
-.progress-container {
-  margin-bottom: 60px;
-}
-.our_team {
-  padding: 70px 0 60px;
-}
-
-
+  .dot_after {
+    font-size: 12px;
+    max-width: 200px;
+  }
+  .dot_before {
+    font-size: 16px;
+  }
+  .progress-container {
+    margin-bottom: 60px;
+  }
+  .our_team {
+    padding: 70px 0 60px;
+  }
 }
 @media only screen and (max-width: 767px) {
   .banner_content h1 {
@@ -717,115 +711,116 @@
   .about_us {
     text-align: center;
     padding-top: 4rem;
-}
+  }
 
-.about_us .row {
-  flex-direction: column-reverse;
-}
-.about_us_content {
-  padding: 50px 0 75px;
-}
-.plans {
-  text-align: center;
-}
-.price_card_bg {
-  margin-bottom: 20px;
-  height: auto;
-}
-.plans_desc li {
-  text-align: left;
-}
-.checkout-btn {
-  margin-top: 50px;
-}
-.col-rev {
-  flex-direction: column-reverse;
-  margin-top: 4rem;
-}
-.btm_content {
-  padding: 50px 0px 50px 0;
-}
-span.lower_quote {
-  position: relative;
-  top: -10px;
-}
-span.lower_quote svg, .upper_quote svg {
-  width: 14px;
-  height: 14px;
-}
-span.upper_quote {
-  position: relative;
-  top: -6px;
-}
-.ceo_name {
-  font-size: 16px;
-}
-.designaton {
-  font-size: 12px;
-}
-.our_team {
-  text-align: center;
-}
-.progress-container {
-  padding: 30px 15px;
-  flex-wrap: wrap;
-  height: auto;
-  row-gap: 2.5rem;
-}
-.dot {
-  width: 100%;
-  height: auto;
-  flex-wrap: wrap;
-  background: transparent;
-  text-align: left;
-  border-radius: unset;
-  position: relative;
-  padding-left: 25px;
-  justify-content: flex-start;
-}
-.dot::before {
-  position: absolute;
-  content: '';
-  left: 0;
-  top: 9px;
-  background: #fcd535;
-  border-radius: 100%;
-  width: 13px;
-  height: 13px;
-}
-.dot_before {
-  top: 30%;
-  color: #fff;
-  font-size: 25px;
-  font-weight: 700;
-  text-align: left;
-  transform: unset;
-  position: static;
-  width: 100%;
-  padding: 0;
-  font-size: 20px;
-}
-.dot_inner {
-  display: none;
-}
-.progress-step {
-  display: none;
-}
-.dot_before, .dot_after {
-  position: static;
-  text-align: left;
-}
-.dot_after {
-  font-size: 16px;
-  transform: unset;
-  padding: 0;
-  margin-top:8px;
-  max-width: 100%;
-}
-.social_icons ul {
-  justify-content: center;
-}
-
+  .about_us .row {
+    flex-direction: column-reverse;
+  }
+  .about_us_content {
+    padding: 50px 0 75px;
+  }
+  .plans {
+    text-align: center;
+  }
+  .price_card_bg {
+    margin-bottom: 20px;
+    height: auto;
+  }
+  .plans_desc li {
+    text-align: left;
+  }
+  .checkout-btn {
+    margin-top: 50px;
+  }
+  .col-rev {
+    flex-direction: column-reverse;
+    margin-top: 4rem;
+  }
+  .btm_content {
+    padding: 50px 0px 50px 0;
+  }
+  span.lower_quote {
+    position: relative;
+    top: -10px;
+  }
+  span.lower_quote svg,
+  .upper_quote svg {
+    width: 14px;
+    height: 14px;
+  }
+  span.upper_quote {
+    position: relative;
+    top: -6px;
+  }
+  .ceo_name {
+    font-size: 16px;
+  }
+  .designaton {
+    font-size: 12px;
+  }
+  .our_team {
+    text-align: center;
+  }
+  .progress-container {
+    padding: 30px 15px;
+    flex-wrap: wrap;
+    height: auto;
+    row-gap: 2.5rem;
+  }
+  .dot {
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    background: transparent;
+    text-align: left;
+    border-radius: unset;
+    position: relative;
+    padding-left: 25px;
+    justify-content: flex-start;
+  }
+  .dot::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 9px;
+    background: #fcd535;
+    border-radius: 100%;
+    width: 13px;
+    height: 13px;
+  }
+  .dot_before {
+    top: 30%;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: left;
+    transform: unset;
+    position: static;
+    width: 100%;
+    padding: 0;
+    font-size: 20px;
+  }
+  .dot_inner {
+    display: none;
+  }
+  .progress-step {
+    display: none;
+  }
+  .dot_before,
+  .dot_after {
+    position: static;
+    text-align: left;
+  }
+  .dot_after {
+    font-size: 16px;
+    transform: unset;
+    padding: 0;
+    margin-top: 8px;
+    max-width: 100%;
+  }
+  .social_icons ul {
+    justify-content: center;
+  }
 }
 @media only screen and (max-width: 575px) {
   .banner_layout {
@@ -837,6 +832,4 @@ span.upper_quote {
   .banner_btn {
     font-size: 14px;
   }
-  
-
 }
