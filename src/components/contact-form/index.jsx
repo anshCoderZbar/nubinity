@@ -88,7 +88,7 @@ export const ContactForm = () => {
                 <div className="mt-3">
                   <FormInput
                     placeholder="phone number"
-                    type="text"
+                    type="number"
                     name="phoneNo"
                     value={formData?.phoneNo}
                     onChange={handleChange}

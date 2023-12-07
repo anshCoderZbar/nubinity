@@ -11,13 +11,13 @@ function App() {
   useEffect(() => {
     AOS.init();
     AOS.refresh();
-    initApm({
-      serviceName: process.env.REACT_APP_ELASTIC_SERVICE_NAME,
-      serverUrl: process.env.REACT_APP_ELASTIC_SERVICE_URL,
-      serviceVersion: process.env.REACT_APP_ELASTIC_SERVICE_VERSION,
-      environment: process.env.REACT_APP_ELASTIC_ENVIRONMENT,
-    });
   }, []);
+  initApm({
+    serviceName: process.env.REACT_APP_ELASTIC_SERVICE_NAME,
+    serverUrl: process.env.REACT_APP_ELASTIC_SERVICE_URL,
+    serviceVersion: process.env.REACT_APP_ELASTIC_SERVICE_VERSION,
+    environment: process.env.REACT_APP_ELASTIC_ENVIRONMENT,
+  });
 
   return <AllRoutes />;
 }
