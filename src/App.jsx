@@ -6,18 +6,15 @@ import { useEffect } from "react";
 import * as Sentry from "@sentry/react";
 import { init as initApm } from "@elastic/apm-rum";
 import "./App.css";
+import { ElasticApmConfig } from "elastic";
 
 function App() {
   useEffect(() => {
     AOS.init();
     AOS.refresh();
   }, []);
-  initApm({
-    serviceName: process.env.REACT_APP_ELASTIC_SERVICE_NAME,
-    serverUrl: process.env.REACT_APP_ELASTIC_SERVICE_URL,
-    serviceVersion: process.env.REACT_APP_ELASTIC_SERVICE_VERSION,
-    environment: process.env.REACT_APP_ELASTIC_ENVIRONMENT,
-  });
+
+  ElasticApmConfig();
 
   return <AllRoutes />;
 }
