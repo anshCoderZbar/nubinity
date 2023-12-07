@@ -369,10 +369,10 @@ export default function Home() {
                       >
                         <Linkedin />
                       </a>
-                      <a className="text-white" href="#">
+                      <a className="text-white" href="/">
                         <InstagramIcon />
                       </a>
-                      <a className="text-white" href="#">
+                      <a className="text-white" href="/">
                         <TwitterIcon />
                       </a>
                     </div>

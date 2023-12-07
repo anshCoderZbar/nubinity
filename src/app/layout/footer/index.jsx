@@ -4,14 +4,6 @@ import { Link } from "react-router-dom";
 import { LAYOUT_IMG } from "app/images";
 import { FooterLayout } from "mock/Layout";
 
-import {
-  Facebook,
-  InstagramIcon,
-  Linkedin,
-  Send,
-  TwitterIcon,
-} from "lucide-react";
-
 export const Footer = () => {
   const [cookieNoti, showCookieNoti] = useState(false);
   useEffect(() => {
@@ -81,7 +73,7 @@ export const Footer = () => {
                 rel="noreferrer"
                 href="https://www.facebook.com/profile.php?id=61553977341391"
               >
-                <img src={require("assets/facebook.png")} />
+                <img src={require("assets/facebook.png")} alt="socialmedia" />
               </a>
               <a
                 className="footer_icon"
@@ -89,7 +81,7 @@ export const Footer = () => {
                 rel="noreferrer"
                 href="https://www.instagram.com/nubinity_offical/?igshid=NGVhN2U2NjQ0Yg%3D%3D"
               >
-                <img src={require("assets/instagram.png")} />
+                <img src={require("assets/instagram.png")} alt="socialmedia" />
               </a>
               <a
                 className="threads_img footer_icon"
@@ -97,7 +89,7 @@ export const Footer = () => {
                 rel="noreferrer"
                 href="https://www.threads.net/@nubinity_offical"
               >
-                <img src={require("assets/threads.png")} />
+                <img src={require("assets/threads.png")} alt="socialmedia" />
               </a>
               <a
                 className=" footer_icon"
@@ -105,7 +97,7 @@ export const Footer = () => {
                 rel="noreferrer"
                 href="https://t.me/@Nubinity"
               >
-                <img src={require("assets/telegram.png")} />
+                <img src={require("assets/telegram.png")} alt="socialmedia" />
               </a>
               <a
                 className="footer_icon"
@@ -113,7 +105,7 @@ export const Footer = () => {
                 rel="noreferrer"
                 href="https://www.linkedin.com/company/nubinity/"
               >
-                <img src={require("assets/linked_in.png")} />
+                <img src={require("assets/linked_in.png")} alt="socialmedia" />
               </a>
               <a
                 className=" footer_icon "
@@ -121,7 +113,7 @@ export const Footer = () => {
                 rel="noreferrer"
                 href="https://discord.gg/Xbxdwhwvsp"
               >
-                <img src={require("assets/discord.png")} />
+                <img src={require("assets/discord.png")} alt="socialmedia" />
               </a>
             </div>
             <a
@@ -130,7 +122,7 @@ export const Footer = () => {
               rel="noreferrer"
               href="ts3server://voice.nubinity.com"
             >
-              <img src={require("assets/teamspeak.png")} />
+              <img src={require("assets/teamspeak.png")} alt="socialmedia" />
             </a>
           </div>
           {FooterLayout?.map((links) => {

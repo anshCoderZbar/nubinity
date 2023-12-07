@@ -16,7 +16,7 @@ export const LAYOUT_IMG = {
   teamspeak: require("assets/teamspeak.png"),
   termsBanner: require("assets/terms_services.webp"),
   vision: require("assets/vision.png"),
-  privacyBanner: require("assets/privacy.png"),
+  privacy: require("assets/privacy.png"),
   privacyBanner: require("assets/privacy-banner.webp"),
   customerprivacy: require("assets/privacy.png"),
 };

@@ -47,9 +47,9 @@ export const Header = () => {
             <Link to="/contact-us" className="nav-item" style={{ "--i": "3" }}>
               Contact
             </Link>
-            <a href="#" className="nav-button">
+            <Link to="/" className="nav-button">
               Get Started
-            </a>
+            </Link>
           </div>
         </div>
       </div>

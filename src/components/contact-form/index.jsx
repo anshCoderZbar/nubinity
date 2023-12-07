@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { LAYOUT_IMG } from "app/images";
 import { FormInput } from "components/ui/FormInput";
 import { Textarea } from "components/ui/Textarea";
@@ -156,12 +157,12 @@ export const ContactForm = () => {
               >
                 <ul>
                   <li>
-                    <a href="#" target="_blank" rel="noreferrer">
+                    <Link to="/" target="_blank" rel="noreferrer">
                       <span>
                         <LocateFixedIcon />
                       </span>
                       <p> New Orleans, LA</p>
-                    </a>
+                    </Link>
                   </li>
                   <li>
                     <a href="tel:+18337925683">
@@ -172,11 +173,11 @@ export const ContactForm = () => {
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="mailto:hello@nubinity.com">
                       <span>
                         <Mail />
                       </span>
-                      <p> hello@nubinity.com</p>
+                      <p>hello@nubinity.com</p>
                     </a>
                   </li>
                 </ul>
