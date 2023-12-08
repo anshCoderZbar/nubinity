@@ -8,7 +8,7 @@ export default function ServicesPage() {
       <div className="pt-2 pt-sm-3 pt-lg-5"></div>
       <div className="services_abt_bg">
         <div id="services" className="container-fluid">
-          <h2 className="main_head_1 text-center">Services</h2>
+          <h2 className="main_head_1 text-center pt-2">Services</h2>
           <Services />
         </div>
       </div>
