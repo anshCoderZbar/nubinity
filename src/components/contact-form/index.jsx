@@ -8,10 +8,14 @@ import React, { useState } from "react";
 import "styles/Contact.css";
 import { formState, validateValues } from "./validation";
 import axios from "axios";
+import { useNotifications } from "reapop";
 export const ContactForm = () => {
+  const { notify } = useNotifications();
+
   const [errors, setError] = useState({});
   const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState(formState);
+
   const handleChange = (e) => {
     const { name, value } = e?.target;
     setFormData({ ...formData, [name]: value });
@@ -33,10 +37,13 @@ export const ContactForm = () => {
             message: formData?.message,
           }
         );
-        console.log(result.data);
+        if (result?.data?.success) {
+          setLoading(false);
+          setFormData(formState);
+          notify("Thanks for connecting with us", "success");
+        }
       } catch (error) {
-        setLoading(false);
-        console.error("Error:", error);
+        notify("OOPS! Some error occured", "error");
       }
     }
   };

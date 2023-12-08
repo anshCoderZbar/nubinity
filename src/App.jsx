@@ -4,9 +4,10 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import * as Sentry from "@sentry/react";
-import { init as initApm } from "@elastic/apm-rum";
 import "./App.css";
 import { ElasticApmConfig } from "elastic";
+import { NotificationsProvider } from "reapop";
+import { Notification } from "components/notification";
 
 function App() {
   useEffect(() => {
@@ -16,7 +17,12 @@ function App() {
 
   ElasticApmConfig();
 
-  return <AllRoutes />;
+  return (
+    <NotificationsProvider>
+      <Notification />
+      <AllRoutes />
+    </NotificationsProvider>
+  );
 }
 
 export default Sentry.withProfiler(App);
