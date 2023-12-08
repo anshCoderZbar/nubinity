@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 
 export const Header = () => {
   const [scrollY, setScrollY] = useState(0);
+  const [checked, setChecked] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -17,37 +18,63 @@ export const Header = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
+  console.log(checked);
   return (
     <header className={`header ${scrollY >= 50 ? "blur-class" : ""}`}>
       <div className="container-fluid">
         <div className="navigation_bar">
-          <Link to="/">
+          <Link onClick={() => setChecked(false)} to="/">
             <img src={LAYOUT_IMG.headerLogo} alt="logo" className="logo" />
           </Link>
-          <input type="checkbox" id="check" />
+          <input
+            type="checkbox"
+            id="check"
+            onClick={() => setChecked(!checked)}
+          />
           <label htmlFor="check" className="icons overlay">
             <div className="bx bx-menu" id="menu-icon">
-              <Menu />
+              {!checked ? <Menu /> : <X />}
             </div>
-            <div className="bx bx-x" id="close-icon">
-              <X />
-            </div>
+            <div className="bx bx-x" id="close-icon"></div>
           </label>
-          <div className="navbar">
-            <Link to="/" className="nav-item" style={{ "--i": "0" }}>
+          <div className={`navbar ${checked ? "nav-active" : ""}`}>
+            <Link
+              onClick={() => setChecked(false)}
+              to="/"
+              className="nav-item"
+              style={{ "--i": "0" }}
+            >
               Home
             </Link>
-            <Link to="/about" className="nav-item" style={{ "--i": "1" }}>
+            <Link
+              onClick={() => setChecked(false)}
+              to="/about"
+              className="nav-item"
+              style={{ "--i": "1" }}
+            >
               About
             </Link>
-            <Link to="/services" className="nav-item" style={{ "--i": "2" }}>
+            <Link
+              onClick={() => setChecked(false)}
+              to="/services"
+              className="nav-item"
+              style={{ "--i": "2" }}
+            >
               Services
             </Link>
-            <Link to="/contact-us" className="nav-item" style={{ "--i": "3" }}>
+            <Link
+              onClick={() => setChecked(false)}
+              to="/contact-us"
+              className="nav-item"
+              style={{ "--i": "3" }}
+            >
               Contact
             </Link>
-            <Link to="/" className="nav-button">
+            <Link
+              onClick={() => setChecked(false)}
+              to="/"
+              className="nav-button"
+            >
               Get Started
             </Link>
           </div>

@@ -128,18 +128,6 @@
     display: inline-flex;
   }
 
-  #check:checked ~ .icons #menu-icon {
-    display: none;
-  }
-
-  .icons #close-icon {
-    display: none;
-  }
-
-  #check:checked ~ .icons #close-icon {
-    display: block;
-  }
-
   .navbar {
     position: absolute;
     top: 100%;
@@ -159,9 +147,15 @@
     align-items: center;
   }
 
-  #check:checked ~ .navbar {
+  .nav-active {
     height: 45vh;
     backdrop-filter: blur(10px);
+  }
+
+  .nav-active a {
+    transform: translateY(0);
+    opacity: 1;
+    transition-delay: calc(0.15s * var(--i));
   }
 
   .nav-item {
@@ -182,11 +176,6 @@
     width: auto;
   }
 
-  #check:checked ~ .navbar a {
-    transform: translateY(0);
-    opacity: 1;
-    transition-delay: calc(0.15s * var(--i));
-  }
   .nav-button {
     display: block;
     width: fit-content;
