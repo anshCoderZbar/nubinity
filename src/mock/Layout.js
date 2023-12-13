@@ -6,27 +6,27 @@ export const FooterLayout = [
       {
         id: 1,
         link: "Knowledgebase",
-        slug: "/privacy-policy",
+        slug: "https://clients.nubinity.com",
       },
       {
         id: 2,
         link: "Network Status ",
-        slug: "/privacy-policy",
+        slug: "https://clients.nubinity.com",
       },
       {
         id: 3,
         link: "Downloads",
-        slug: "/privacy-policy",
+        slug: "https://clients.nubinity.com",
       },
       {
         id: 4,
         link: "Announcements",
-        slug: "/privacy-policy",
+        slug: "https://clients.nubinity.com",
       },
       {
         id: 5,
         link: "WISP Control Panel ",
-        slug: "/privacy-policy",
+        slug: "https://clients.nubinity.com",
       },
     ],
   },
@@ -37,7 +37,7 @@ export const FooterLayout = [
       {
         id: 6,
         link: "Submit Support Ticket",
-        slug: "/privacy-policy",
+        slug: "https://clients.nubinity.com",
       },
       {
         id: 7,
@@ -47,7 +47,7 @@ export const FooterLayout = [
       {
         id: 8,
         link: "Abuse Reporting",
-        slug: "/privacy-policy",
+        slug: "https://clients.nubinity.com",
       },
       {
         id: 9,
@@ -57,7 +57,7 @@ export const FooterLayout = [
       {
         id: 10,
         link: "FAQ",
-        slug: "/privacy-policy",
+        slug: "https://clients.nubinity.com",
       },
     ],
   },
@@ -78,17 +78,17 @@ export const FooterLayout = [
       {
         id: 13,
         link: "Investor Relations",
-        slug: "/privacy-policy",
+        slug: "https://clients.nubinity.com",
       },
       {
         id: 14,
         link: "Threads",
-        slug: "/privacy-policy",
+        slug: "https://clients.nubinity.com",
       },
       {
         id: 15,
         link: "Client Area",
-        slug: "/privacy-policy",
+        slug: "https://clients.nubinity.com",
       },
     ],
   },
@@ -109,17 +109,17 @@ export const FooterLayout = [
       {
         id: 18,
         link: "Social media links",
-        slug: "/privacy-policy",
+        slug: "https://clients.nubinity.com",
       },
       {
         id: 19,
         link: "Threads",
-        slug: "/privacy-policy",
+        slug: "https://clients.nubinity.com",
       },
       {
         id: 20,
         link: "Client Area",
-        slug: "/privacy-policy",
+        slug: "https://clients.nubinity.com",
       },
     ],
     paymentLinks: true,

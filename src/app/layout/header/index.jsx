@@ -71,7 +71,8 @@ export const Header = () => {
             </Link>
             <Link
               onClick={() => setChecked(false)}
-              to="/"
+              target={"_blank"}
+              to={"https://clients.nubinity.com"}
               className="nav-button"
             >
               Get Started

@@ -142,7 +142,16 @@ export const Footer = () => {
                     {links?.menus?.map((elm) => {
                       return (
                         <li key={elm?.id}>
-                          <Link to={elm?.slug}>{elm?.link}</Link>
+                          <Link
+                            target={
+                              elm?.slug === "https://clients.nubinity.com"
+                                ? "_blank"
+                                : ""
+                            }
+                            to={elm?.slug}
+                          >
+                            {elm?.link}
+                          </Link>
                         </li>
                       );
                     })}

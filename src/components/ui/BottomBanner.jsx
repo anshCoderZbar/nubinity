@@ -13,7 +13,8 @@ export const BottomBanner = () => {
           for free consultation and will create a custom plan to fit your needs.
         </p>
         <Link
-          to="/"
+          target={"_blank"}
+          to={"https://clients.nubinity.com"}
           data-aos="fade-up"
           data-aos-delay="500"
           data-aos-duration="1000"
