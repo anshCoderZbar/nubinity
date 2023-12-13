@@ -3,14 +3,22 @@ import { Link } from "react-router-dom";
 
 import { LAYOUT_IMG } from "app/images";
 import { FooterLayout } from "mock/Layout";
+import Cookies from "js-cookie";
 
 export const Footer = () => {
   const [cookieNoti, showCookieNoti] = useState(false);
   useEffect(() => {
+    const hasCookie = Cookies.get("session");
+    const parsedCookie = hasCookie && JSON.parse(hasCookie);
     setTimeout(() => {
-      showCookieNoti(true);
+      !parsedCookie && showCookieNoti(true);
     }, 2500);
   }, []);
+
+  const handleCookies = () => {
+    Cookies.set("session", JSON?.stringify({ path: window?.location?.href }));
+    showCookieNoti(false);
+  };
 
   useEffect(() => {
     const BASE_URL = "https://app.chatwoot.com";
@@ -51,8 +59,8 @@ export const Footer = () => {
           </p>
 
           <div className="cookie_btn">
-            <button onClick={() => showCookieNoti(false)}>Accept</button>
-            <button>Cancel</button>
+            <button onClick={handleCookies}>Accept</button>
+            <button onClick={() => showCookieNoti(false)}>Cancel</button>
           </div>
         </div>
       )}

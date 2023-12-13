@@ -1,6 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
+import { Autoplay, Pagination } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -15,8 +15,11 @@ export const HomeBanner = () => {
       pagination={{
         clickable: true,
       }}
-      modules={[Pagination]}
+      modules={[Pagination, Autoplay]}
       className="banner_swiper"
+      speed={1000}
+      effect="fade"
+      autoplay={{ delay: 3000, disableOnInteraction: false }}
     >
       {BannerData?.map((banner) => {
         return (

@@ -18,7 +18,6 @@ export const Header = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  console.log(checked);
   return (
     <header className={`header ${scrollY >= 50 ? "blur-class" : ""}`}>
       <div className="container-fluid">
