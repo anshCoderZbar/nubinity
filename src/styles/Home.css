@@ -115,9 +115,10 @@
 .serrvices .swiper-pagination {
   position: relative;
   margin-top: 40px;
+}
+.slider_tetx {
   margin-bottom: 40px;
 }
-
 .serrvices .swiper-pagination-bullet {
   height: 20px;
   width: 20px;
