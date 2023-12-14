@@ -67,7 +67,9 @@ export const Footer = () => {
       <div className="container-fluid">
         <div className="footer_layout">
           <div className="footer_head">
-            <img src={LAYOUT_IMG.headerLogo} alt="logo" />
+            <Link to={"/"}>
+              <img src={LAYOUT_IMG.headerLogo} alt="logo" />
+            </Link>
             <span className="mail">
               <a href="mailto:hello@nubinity.com">hello@nubinity.com</a>
             </span>
@@ -143,11 +145,7 @@ export const Footer = () => {
                       return (
                         <li key={elm?.id}>
                           <Link
-                            target={
-                              elm?.slug === "https://clients.nubinity.com"
-                                ? "_blank"
-                                : ""
-                            }
+                            target={elm?.target ? "_blank" : ""}
                             to={elm?.slug}
                           >
                             {elm?.link}
