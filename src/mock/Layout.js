@@ -86,8 +86,7 @@ export const FooterLayout = [
       {
         id: 13,
         link: "Investor Relations",
-        slug: "https://clients.nubinity.com",
-        target: true,
+        slug: "/investors",
       },
       {
         id: 14,

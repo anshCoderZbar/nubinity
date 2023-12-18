@@ -9,6 +9,7 @@ import About from "pages/about";
 import ContactUs from "pages/contact-us";
 import ServicesPage from "pages/services";
 import { ApmRoutes } from "@elastic/apm-rum-react";
+import { Investors } from "pages/investors";
 
 export const AllRoutes = () => {
   return (
@@ -41,6 +42,7 @@ export const AllRoutes = () => {
             </PublicRoutes>
           }
         />
+        <Route exact path="/Investors" element={<Investors />} />
         <Route
           exact
           path="/contact-us"
