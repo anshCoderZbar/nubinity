@@ -10,7 +10,9 @@ export const Investors = () => {
         <div className="container-mid">
           <div
             className="animation-container animation-fade-right"
-            data-animation-delay="300"
+            data-aos="fade-up"
+            data-aos-delay="500"
+            data-aos-duration="1000"
           >
             <h1>Coming Soon..</h1>
           </div>
@@ -18,7 +20,9 @@ export const Investors = () => {
           <div
             onClick={() => navigate("/")}
             className="animation-container animation-fade-up"
-            data-animation-delay="900"
+            data-aos="fade-up"
+            data-aos-delay="1000"
+            data-aos-duration="1000"
           >
             <div className="open-popup">Home</div>
           </div>
