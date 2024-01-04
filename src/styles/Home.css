@@ -21,6 +21,8 @@
   justify-content: center;
   height: 100%;
   padding: 0 20px;
+  position: relative;
+  z-index: 2;
 }
 
 .banner_content h1 {
@@ -43,6 +45,7 @@
   margin-top: 20px;
   transition: 0.5s ease-in-out;
 }
+
 .banner_btn:hover {
   background-color: #0788ff;
 }
@@ -55,6 +58,18 @@
 .banner_swiper .swiper-pagination-bullet-active {
   background-color: #fdc535 !important;
 }
+
+.banner_layout iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 100vh;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 1;
+}
+
 
 /* banner */
 
@@ -108,17 +123,18 @@
 }
 
 .service-card-body:hover img {
-  filter: brightness(0) saturate(100%) invert(36%) sepia(87%) saturate(1710%)
-    hue-rotate(192deg) brightness(99%) contrast(107%);
+  filter: brightness(0) saturate(100%) invert(36%) sepia(87%) saturate(1710%) hue-rotate(192deg) brightness(99%) contrast(107%);
 }
 
 .serrvices .swiper-pagination {
   position: relative;
   margin-top: 40px;
 }
+
 .slider_tetx {
   margin-bottom: 40px;
 }
+
 .serrvices .swiper-pagination-bullet {
   height: 20px;
   width: 20px;
@@ -171,6 +187,7 @@
   font-weight: 700;
   line-height: 69px;
 }
+
 .plans_content p {
   color: #fff;
   font-size: 18px;
@@ -200,11 +217,13 @@
   color: #fff;
   font-size: 24px;
 }
+
 .price {
   color: #fff;
   font-size: 50px;
   font-weight: 700;
 }
+
 .price span {
   font-size: 16px;
 }
@@ -218,6 +237,7 @@
 .plans_desc {
   list-style: none;
 }
+
 .plans_desc li {
   color: #fff;
   margin-top: 25px;
@@ -262,6 +282,7 @@
 .price_card_bg:hover svg {
   background-color: #0788ff;
 }
+
 .price_card_bg:hover .checkout-btn {
   background-color: #0788ff;
   border: 1px solid #0788ff;
@@ -273,15 +294,18 @@
 .vision {
   background-color: #171820;
 }
+
 .vision_content {
   margin-left: 50px;
   padding: 40px 0;
 }
+
 .visn_imgbx img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
 .vision_content button {
   margin-top: 15px;
   text-transform: uppercase;
@@ -292,15 +316,18 @@
   max-width: 970px;
   margin: 0 auto;
 }
+
 .btm_content .lower_quote svg,
 .btm_content .upper_quote svg {
   fill: #fdc535;
   color: #fdc535;
   margin: 0 5px;
 }
+
 .btm_content .lower_quote svg {
   transform: rotateZ(180deg);
 }
+
 .btm_content p {
   color: #fff;
   text-align: center;
@@ -325,9 +352,11 @@
   display: block;
   margin-top: 10px;
 }
+
 .custmr_privacy {
   background-color: #0788ff;
 }
+
 .ceo_message_section {
   background-color: #171619;
 }
@@ -345,6 +374,7 @@
   height: 100%;
   padding: 70px 0 100px;
 }
+
 .team_card {
   display: grid;
   /* justify-content: center;
@@ -353,6 +383,7 @@
   gap: 80px;
   margin-bottom: 80px;
 }
+
 .teams h2 {
   margin-bottom: 55px;
 }
@@ -376,20 +407,25 @@
   align-items: center;
   margin-top: -45px;
 }
+
 .member_img img {
   border-radius: 12px;
 }
+
 .member_name {
   font-size: 18px;
 }
+
 .member_designation {
   font-size: 14px;
 }
+
 .card_icons,
 .member_name,
 .member_designation {
   margin-top: 10px;
 }
+
 .progress-container {
   width: 100%;
   margin: 0 auto;
@@ -444,6 +480,7 @@
   text-align: center;
   transform: translateY(-50%);
 }
+
 .dot_after {
   bottom: 30%;
   color: #fff;
@@ -459,121 +496,156 @@
 .s_1 {
   background-color: #fcd535;
 }
+
 .s_2 {
   background: linear-gradient(90deg, #fcd535 0%, #a7b566 35%);
 }
+
 .s_3 {
   background: linear-gradient(90deg, #fcd535 0%, #a7b566 0%, #529ccc 35%);
 }
+
 .progress_content {
   color: #fff;
 }
+
 @media only screen and (max-width: 1600px) {
   .banner_layout {
     height: 80vh;
   }
+
   .banner_content h1 {
     font-size: 40px;
   }
+
   .banner_btn {
     font-size: 16px;
   }
+
   .plans_content span {
     font-size: 16px;
   }
+
   .plans_content h2 {
     font-size: 42px;
     line-height: 52px;
   }
+
   .plans_content p {
     font-size: 16px;
   }
+
   .price_card_bg h3 {
     font-size: 20px;
   }
+
   .price {
     font-size: 45px;
   }
+
   .checkout-btn {
     font-size: 13px;
     padding: 9px 28px;
   }
+
   .price_card_bg {
     padding: 28px 20px;
   }
+
   .service-card-body p {
     font-size: 16px;
   }
+
   .dot_before {
     font-size: 20px;
   }
+
   .dot {
     width: 45px;
     height: 45px;
   }
+
   .dot_after {
     font-size: 15px;
   }
+
   .dot_inner {
     height: 22px;
     width: 22px;
   }
+
   .progress-container {
     padding: 40px 46px;
   }
+
   .serrvices .swiper-pagination-bullet {
     height: 14px;
     width: 14px;
   }
+
   .plans_desc li {
     font-size: 13px;
   }
+
   .designaton {
     font-size: 16px;
   }
 }
+
 @media only screen and (max-width: 1440px) {
   .banner_layout {
     height: 68vh;
   }
+
   .banner_content h1 {
     font-size: 40px;
   }
+
   .banner_btn {
     padding: 11px 30px;
   }
+
   .service-card-body {
     padding: 30px;
     min-height: 270px;
     max-height: 280px;
     gap: 25px;
   }
+
   .service-card-body img {
     width: 60px;
   }
+
   .plans_content h2 {
     font-size: 36px;
     line-height: 45px;
   }
+
   .price {
     font-size: 40px;
   }
+
   .plans_desc li svg {
     height: 15px;
     width: 15px;
   }
+
   .plans_desc li {
     padding-left: 1.5rem;
   }
+
   .team_card {
     gap: 35px;
   }
+
   .member_name {
     font-size: 16px;
   }
+
   .member_designation {
     font-size: 13px;
   }
+
   .card_icons a svg {
     width: 20px;
     height: 20px;
@@ -584,80 +656,103 @@
     line-height: 36px;
   }
 }
+
 @media only screen and (max-width: 1200px) {
   .banner_content h1 {
     max-width: 600px;
     font-size: 32px;
   }
+
   .serrvices .swiper-pagination-bullet {
     height: 12px;
     width: 12px;
   }
+
   .service_card {
     margin-top: 30px;
   }
+
   .plans_content span {
     font-size: 13px;
   }
+
   .plans_content h2 {
     font-size: 30px;
     line-height: 38px;
   }
+
   .plans_content p {
     font-size: 14px;
   }
+
   .price-discounted {
     font-size: 15px;
   }
+
   .price_card_bg h3 {
     font-size: 18px;
   }
+
   .price {
     font-size: 28px;
   }
+
   .price span {
     font-size: 13px;
   }
+
   .price_card_bg {
     padding: 28px 15px;
   }
+
   .vision_content {
     margin-left: 25px;
   }
+
   .cards_outer {
     margin-top: 2.5rem;
   }
+
   .btm_content p {
     font-size: 16px;
     max-width: 870px;
     margin: 0 auto;
   }
+
   .designaton {
     font-size: 14px;
   }
+
   .dot_before {
     font-size: 17px;
   }
+
   .dot {
     width: 40px;
     height: 40px;
   }
+
   .dot_inner {
     height: 18px;
     width: 18px;
   }
+
   .progress-step {
     height: 7px;
   }
+
   .progress-container {
     height: 330px;
   }
+
   .teams h2 {
     margin-bottom: 30px;
   }
+
   .team_card {
     margin-top: 4.5rem;
   }
+
   .progress-container {
     margin-top: 30px;
   }
@@ -668,25 +763,32 @@
     font-size: 30px;
     margin-bottom: 1.5rem;
   }
+
   .banner_btn {
     margin-top: 10px;
   }
+
   .services_abt_bg {
     padding: 4rem 0 1rem;
   }
+
   .serrvices .swiper-pagination-bullet {
     height: 10px;
     width: 10px;
   }
+
   .price span {
     font-size: 12px;
   }
+
   .plans_desc li {
     margin-top: 15px;
   }
+
   .btm_content {
     padding: 50px 22px 50px 0;
   }
+
   .vision_content {
     margin-left: 5px;
   }
@@ -695,20 +797,25 @@
     font-size: 12px;
     max-width: 200px;
   }
+
   .dot_before {
     font-size: 16px;
   }
+
   .progress-container {
     margin-bottom: 60px;
   }
+
   .our_team {
     padding: 70px 0 60px;
   }
 }
+
 @media only screen and (max-width: 767px) {
   .banner_content h1 {
     font-size: 24px;
   }
+
   .about_us {
     text-align: center;
     padding-top: 4rem;
@@ -717,57 +824,72 @@
   .about_us .row {
     flex-direction: column-reverse;
   }
+
   .about_us_content {
     padding: 50px 0 75px;
   }
+
   .plans {
     text-align: center;
   }
+
   .price_card_bg {
     margin-bottom: 20px;
     height: auto;
   }
+
   .plans_desc li {
     text-align: left;
   }
+
   .checkout-btn {
     margin-top: 50px;
   }
+
   .col-rev {
     flex-direction: column-reverse;
     margin-top: 4rem;
   }
+
   .btm_content {
     padding: 50px 0px 50px 0;
   }
+
   span.lower_quote {
     position: relative;
     top: -10px;
   }
+
   span.lower_quote svg,
   .upper_quote svg {
     width: 14px;
     height: 14px;
   }
+
   span.upper_quote {
     position: relative;
     top: -6px;
   }
+
   .ceo_name {
     font-size: 16px;
   }
+
   .designaton {
     font-size: 12px;
   }
+
   .our_team {
     text-align: center;
   }
+
   .progress-container {
     padding: 30px 15px;
     flex-wrap: wrap;
     height: auto;
     row-gap: 2.5rem;
   }
+
   .dot {
     width: 100%;
     height: auto;
@@ -779,6 +901,7 @@
     padding-left: 25px;
     justify-content: flex-start;
   }
+
   .dot::before {
     position: absolute;
     content: "";
@@ -789,6 +912,7 @@
     width: 13px;
     height: 13px;
   }
+
   .dot_before {
     top: 30%;
     color: #fff;
@@ -801,17 +925,21 @@
     padding: 0;
     font-size: 20px;
   }
+
   .dot_inner {
     display: none;
   }
+
   .progress-step {
     display: none;
   }
+
   .dot_before,
   .dot_after {
     position: static;
     text-align: left;
   }
+
   .dot_after {
     font-size: 16px;
     transform: unset;
@@ -819,18 +947,34 @@
     margin-top: 8px;
     max-width: 100%;
   }
+
   .social_icons ul {
     justify-content: center;
   }
 }
+
 @media only screen and (max-width: 575px) {
   .banner_layout {
     height: 60vh;
   }
+
   .banner_content h1 {
     font-size: 28px;
   }
+
   .banner_btn {
     font-size: 14px;
+  }
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .banner_layout iframe {
+    height: 56.25vw;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .banner_layout iframe {
+    width: 177.78vh;
   }
 }

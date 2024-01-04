@@ -20,6 +20,7 @@ export const BannerData = [
     id: 1,
     heading: "NUBINITY YOUR WORLD CONNECTED",
     bgImg: require("assets/banner_1.jpg"),
+    video: true,
     linkTxt: "SEE SERVICES",
     slug: "/services",
   },

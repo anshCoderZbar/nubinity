@@ -17,7 +17,7 @@ export const HomeBanner = () => {
       }}
       modules={[Pagination, Autoplay]}
       className="banner_swiper"
-      speed={1000}
+      speed={4000}
       effect="fade"
       autoplay={{ delay: 3000, disableOnInteraction: false }}
     >
@@ -25,7 +25,10 @@ export const HomeBanner = () => {
         return (
           <SwiperSlide key={banner?.id}>
             <div className="banner_layout">
-              <img src={banner?.bgImg} alt="banners" />
+              {banner.video ? (
+                <iframe src="https://www.youtube.com/embed/6EE8Ar3ywQk?controls=0&autoplay=1&mute=1&playsinline=1&loop=1&playlist=6EE8Ar3ywQk"></iframe>
+              ) : null}
+              {banner.video ? null : <img src={banner?.bgImg} alt="banners" />}
               <div className="banner_content">
                 <h1
                   data-aos="fade-up"
