@@ -53,7 +53,7 @@ export const HomeBanner = () => {
       modules={[Pagination, Autoplay]}
       className="banner_swiper"
       effect="fade"
-      speed={4000}
+      speed={3000}
       autoplay={{
         delay: autoplayDelay,
         disableOnInteraction: false,
