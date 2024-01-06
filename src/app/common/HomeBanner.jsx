@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 
@@ -8,27 +8,78 @@ import "swiper/css/pagination";
 import { BannerData } from "mock/Home";
 import { Link } from "react-router-dom";
 
+import video from "assets/banner_video.mp4";
+import ReactPlayer from "react-player";
+
 export const HomeBanner = () => {
+  const swiperRef = useRef();
+  const playerRef = useRef();
+  const [swiper, setSwiper] = useState(null);
+  const [autoplayDelay, setAutoplayDelay] = useState(22000);
+
+  const handleVideoProgress = (state) => {
+    if (state.playedSeconds + 1 >= state.loadedSeconds) {
+      swiper && swiper.slideNext();
+    }
+  };
+
+  useEffect(() => {
+    const handleSlideChange = () => {
+      const currentSlide = swiperRef.current.swiper.realIndex;
+      const isVideoSlide = BannerData[currentSlide]?.video;
+
+      if (isVideoSlide) {
+        playerRef.current.seekTo(0, "seconds");
+        setAutoplayDelay(22000);
+      } else {
+        setAutoplayDelay(3000);
+      }
+    };
+
+    swiper && swiper.on("slideChange", handleSlideChange);
+
+    return () => {
+      swiper && swiper.off("slideChange", handleSlideChange);
+    };
+  }, [swiper]);
+
   return (
     <Swiper
+      ref={swiperRef}
       loop={true}
       pagination={{
         clickable: true,
       }}
       modules={[Pagination, Autoplay]}
       className="banner_swiper"
-      speed={4000}
       effect="fade"
-      autoplay={{ delay: 3000, disableOnInteraction: false }}
+      speed={4000}
+      autoplay={{
+        delay: autoplayDelay,
+        disableOnInteraction: false,
+      }}
+      onSwiper={(s) => setSwiper(s)}
     >
       {BannerData?.map((banner) => {
+        const isVideoSlide = banner.video;
+
         return (
           <SwiperSlide key={banner?.id}>
             <div className="banner_layout">
-              {banner.video ? (
-                <iframe src="https://www.youtube.com/embed/6EE8Ar3ywQk?controls=0&autoplay=1&mute=1&playsinline=1&loop=1&playlist=6EE8Ar3ywQk"></iframe>
-              ) : null}
-              {banner.video ? null : <img src={banner?.bgImg} alt="banners" />}
+              {isVideoSlide ? (
+                <ReactPlayer
+                  ref={playerRef}
+                  url={video}
+                  loop={true}
+                  playing={true}
+                  width={"100%"}
+                  height={"100%"}
+                  muted={true}
+                  onProgress={handleVideoProgress}
+                />
+              ) : (
+                <img src={banner?.bgImg} alt="banners" />
+              )}
               <div className="banner_content">
                 <h1
                   data-aos="fade-up"

@@ -22,7 +22,7 @@
   height: 100%;
   padding: 0 20px;
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
 
 .banner_content h1 {
@@ -58,18 +58,17 @@
 .banner_swiper .swiper-pagination-bullet-active {
   background-color: #fdc535 !important;
 }
-
-.banner_layout iframe {
+.banner_layout > div {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 100vw;
-  height: 100vh;
   transform: translate(-50%, -50%);
   pointer-events: none;
-  z-index: 1;
+  z-index: 999;
 }
-
+.banner_layout video {
+  object-fit: cover;
+}
 
 /* banner */
 
@@ -123,7 +122,8 @@
 }
 
 .service-card-body:hover img {
-  filter: brightness(0) saturate(100%) invert(36%) sepia(87%) saturate(1710%) hue-rotate(192deg) brightness(99%) contrast(107%);
+  filter: brightness(0) saturate(100%) invert(36%) sepia(87%) saturate(1710%)
+    hue-rotate(192deg) brightness(99%) contrast(107%);
 }
 
 .serrvices .swiper-pagination {
