@@ -8,20 +8,17 @@ import "swiper/css/pagination";
 import { BannerData } from "mock/Home";
 import { Link } from "react-router-dom";
 
-import video from "assets/banner_video.mp4";
-import ReactPlayer from "react-player";
+// import video from "assets/banner_video.mp4";
+// import ReactPlayer from "react-player";
 
 export const HomeBanner = () => {
   const swiperRef = useRef();
   const playerRef = useRef();
   const [swiper, setSwiper] = useState(null);
   const [autoplayDelay, setAutoplayDelay] = useState(22000);
-
-  const handleVideoProgress = (state) => {
-    if (state.playedSeconds + 1 >= state.loadedSeconds) {
-      swiper && swiper.slideNext();
-    }
-  };
+  const [initialVideo, setInitialVideo] = useState(
+    "https://www.youtube.com/embed/rDOI5eZ0MOU?controls=0&autoplay=1&mute=1&playsinline=1&loop=1&playlist=rDOI5eZ0MOU"
+  );
 
   useEffect(() => {
     const handleSlideChange = () => {
@@ -29,8 +26,8 @@ export const HomeBanner = () => {
       const isVideoSlide = BannerData[currentSlide]?.video;
 
       if (isVideoSlide) {
-        playerRef.current.seekTo(0, "seconds");
         setAutoplayDelay(22000);
+        setInitialVideo(initialVideo.concat("", "&amp;start=0"));
       } else {
         setAutoplayDelay(3000);
       }
@@ -41,7 +38,7 @@ export const HomeBanner = () => {
     return () => {
       swiper && swiper.off("slideChange", handleSlideChange);
     };
-  }, [swiper]);
+  }, [swiper, playerRef]);
 
   return (
     <Swiper
@@ -53,7 +50,7 @@ export const HomeBanner = () => {
       modules={[Pagination, Autoplay]}
       className="banner_swiper"
       effect="fade"
-      speed={3000}
+      speed={1500}
       autoplay={{
         delay: autoplayDelay,
         disableOnInteraction: false,
@@ -67,16 +64,7 @@ export const HomeBanner = () => {
           <SwiperSlide key={banner?.id}>
             <div className="banner_layout">
               {isVideoSlide ? (
-                <ReactPlayer
-                  ref={playerRef}
-                  url={video}
-                  loop={true}
-                  playing={true}
-                  width={"100%"}
-                  height={"100%"}
-                  muted={true}
-                  onProgress={handleVideoProgress}
-                />
+                <iframe ref={playerRef} src={initialVideo}></iframe>
               ) : (
                 <img src={banner?.bgImg} alt="banners" />
               )}
@@ -106,3 +94,14 @@ export const HomeBanner = () => {
     </Swiper>
   );
 };
+
+// <ReactPlayer
+//   ref={playerRef}
+//   url={video}
+//   loop={true}
+//   playing={true}
+//   width={"100%"}
+//   height={"100%"}
+//   muted={true}
+//   onProgress={handleVideoProgress}
+// />
