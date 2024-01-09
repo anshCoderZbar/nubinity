@@ -50,7 +50,7 @@ export const HomeBanner = () => {
       modules={[Pagination, Autoplay]}
       className="banner_swiper"
       effect="fade"
-      speed={1500}
+      speed={4000}
       autoplay={{
         delay: autoplayDelay,
         disableOnInteraction: false,
@@ -73,9 +73,8 @@ export const HomeBanner = () => {
                   data-aos="fade-up"
                   data-aos-delay="500"
                   data-aos-duration="1000"
-                >
-                  {banner?.heading}
-                </h1>
+                  dangerouslySetInnerHTML={{ __html: banner?.heading }}
+                />
                 <Link
                   to={banner?.slug}
                   className="banner_btn"

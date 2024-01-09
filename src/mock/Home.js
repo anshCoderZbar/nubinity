@@ -18,7 +18,7 @@ import serviceIcon08 from "assets/service-icons/icon_08.svg";
 export const BannerData = [
   {
     id: 1,
-    heading: "NUBINITY YOUR WORLD CONNECTED",
+    heading: "NUBINITY <br/> YOUR WORLD CONNECTED",
     bgImg: require("assets/banner_1.jpg"),
     video: true,
     linkTxt: "SEE SERVICES",
